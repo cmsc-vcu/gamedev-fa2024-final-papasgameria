@@ -22,6 +22,7 @@ this game different from others?  What is the goal for playing?
 - GITHUB URL: < [...](https://github.com/cmsc-vcu/gamedev-fa2024-final-papasgameria/tree/main) >
 - Gameplay Video URL: < ... >
 - Google Doc writeup: < ... >
+- Google Drive of Files < https://drive.google.com/drive/folders/18gZstaUBFr4F1W5EDd_tjAz3YEYb6V3f >
 
 ## Files in the repository
 
