@@ -19,7 +19,7 @@ this game different from others?  What is the goal for playing?
 ## Important Links
 
 - Game URL: < ... >
-- GITHUB URL: < ... >
+- GITHUB URL: < [...](https://github.com/cmsc-vcu/gamedev-fa2024-final-papasgameria/tree/main) >
 - Gameplay Video URL: < ... >
 - Google Doc writeup: < ... >
 
