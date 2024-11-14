@@ -7,7 +7,7 @@ This repo contains our work on the four-person game development projects for Gam
 ## Authors
 
 - Krish Patel (patelkp7@vcu.edu)
--
+- Nadeem Abdulmelik (abdulmelikna@vcu.edu)
 - 
 -
 
