@@ -18,11 +18,11 @@ this game different from others?  What is the goal for playing?
 
 ## Important Links
 
-- Game URL: < ... >
 - GITHUB URL: < [GITHUB](https://github.com/cmsc-vcu/gamedev-fa2024-final-papasgameria/tree/main) >
-- Gameplay Video URL: < ... >
-- Google Doc writeup: < ... >
 - Google Drive of Files < [Google Drive](https://drive.google.com/drive/folders/18gZstaUBFr4F1W5EDd_tjAz3YEYb6V3f) >
+- Game webGL URL: < ... >
+- Itch.io URL: < ... >
+- Gameplay Video URL: < ... >
 
 ## Files in the repository
 
