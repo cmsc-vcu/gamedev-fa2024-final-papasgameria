@@ -1,0 +1,478 @@
+title: Start
+---
+<<declare $playerName = "John">>
+<<declare $wifeKnowledge = 0>>
+<<declare $entityAwareness = 0>>
+
+Narrator: John Bennet wakes up on the SS Neptune, a luxury cruise ship. There's a message on the dresser.
+
+Message: Honey, I went to get breakfast. Meet me in the Dining room.
+
+John: (thinking) I love her to death, but sometimes she can be a pain. I was perfectly fine watching Bodyguard and drinking my 6-pack. We can bond over sitting on my damn couch, not going on a $25,000 cruise.
+
+John: (thinking) But the SS Neptune isn't too bad. Has some decent food and sturdy floors. There are some weird characters here though. I don't know about staying another 2 days.
+
+John: I better get going. The missus is waiting... or maybe I should see what else the ship has to offer.
+
+-> Explore the ship
+    <<jump ExploreShip>>
+-> Go straight to the dining room
+    <<jump DiningRoom>>
+
+===
+title: ExploreShip
+---
+<<set $entityAwareness += 1>>
+
+As you explore the ship, you encounter a child standing alone.
+
+Child: Hey mister, could you help me find my mom? She told me to wait here, but it's been an hour.
+
+-> Offer to help the child
+    <<jump HelpChild>>
+-> Ignore the child and walk away
+    <<jump IgnoreChild>>
+-> Tell the child off
+    <<jump TellOffChild>>
+
+===
+title: HelpChild
+---
+John: Sure kid, why don't you follow me to the dining room? She might be there getting you food. I was going to go there anyway.
+
+<<jump FindMother>>
+
+===
+title: IgnoreChild
+---
+You ignore the child and continue walking. As you approach the dining room, you encounter a strange man.
+
+<<jump TheoristEncounter>>
+
+===
+title: TellOffChild
+---
+John: Shut up, kid. Don't you know how to not talk to strangers?
+
+Child: My mom did tell me not to talk to strangers. But she didn't say I couldn't talk to a dead man. Did it hurt when he shot your neck?
+
+John: What did you just say? How do you know that?
+
+<<set $entityAwareness += 1>>
+
+<<jump TheoristEncounter>>
+
+===
+title: FindMother
+---
+You find the child's mother in the dining room.
+
+Child: Mom! Why'd you leave me? I was waiting outside our room for you.
+
+Mother: Oh, I'm so sorry sweetie. I told you to wait in the room. I was going to come with food.
+
+Child: I know, but I kept hearing the bald man screaming outside my room. He keeps telling me that I should have gone for the head.
+
+John: (thinking) What did he just say...
+
+<<set $entityAwareness += 1>>
+
+<<jump TheoristEncounter>>
+
+===
+title: TheoristEncounter
+---
+A strange man approaches you.
+
+Theorist: You shouldn't be here. Not like this. Not now.
+
+John: Excuse me?
+
+Theorist: Leave. Take your wife and leave this ship. The longer you stay, the more it feeds, and once it's full...
+
+John: How do you know about my wife? Did you do something to her?
+
+Wife: (enters) Hey honey, are you okay? This man has been bothering all the guests. Just leave him alone. I think he's on crack or something.
+
+Theorist: Please. Don't allow it to win. Not again. He won't leave until you remember...
+
+<<set $entityAwareness += 1>>
+
+-> Confront the theorist
+    <<jump ConfrontTheorist>>
+-> Ignore the theorist and go with your wife
+    <<jump DiningRoom>>
+
+===
+title: ConfrontTheorist
+---
+John: Look, I'm tired of your random rants. Can you leave me and my wife alone?
+
+Theorist: Why don't you listen, John? Why don't you do you and your wife a favor and run? Or do you want it to follow? Do you like it when it's close? So close that it can almost...
+
+John: (turns around, feeling something touch him, but sees nothing)
+
+<<set $entityAwareness += 1>>
+
+Wife: John, ignore this man. There's nothing chasing you, there's nothing hunting you. He's just trying to scare you for his own personal enjoyment. Let's just ignore this man and his imaginary friend and enjoy this trip.
+
+-> Go with your wife
+    <<jump DiningRoom>>
+-> Press the theorist for more information
+    <<jump PressTheorist>>
+
+===
+title: PressTheorist
+---
+John: What are you talking about? What's following me?
+
+Theorist: The entity, John. It feeds on guilt and pain. And you... you reek of it.
+
+John: I don't know what you're talking about.
+
+Theorist: The cave, John. What really happened in the cave?
+
+<<set $entityAwareness += 2>>
+
+Wife: John, let's go. This man is clearly disturbed.
+
+-> Go with your wife
+    <<jump DiningRoom>>
+-> Ask about the cave
+    <<jump AskAboutCave>>
+
+===
+title: AskAboutCave
+---
+John: How do you know about the cave?
+
+Theorist: I know more than you think, John. The question is, do you remember what really happened?
+
+John: I... I don't want to talk about this.
+
+Theorist: You need to remember, John. Before it's too late.
+
+<<set $entityAwareness += 2>>
+
+Wife: (forcefully) John, we're leaving. Now.
+
+<<jump DiningRoom>>
+
+===
+title: DiningRoom
+---
+You and your wife sit down for breakfast in the dining room.
+
+Wife: Hey John, I really appreciate you trying to take a break. I know it's a lot to ask for you to not think about the incident, but just give it time. We can start fresh, cash in the book tour and live the quiet life somewhere.
+
+John: You're right, it is hard to move on, but with you here next to me, it's becoming easier by the day.
+
+Wife: Love you, sweetie. I'm going to the pool. Are you ready to go?
+
+-> Go to the pool
+    <<jump Pool>>
+-> Go back to your room
+    <<jump Room>>
+-> Explore the ship more
+    <<jump ExploreMore>>
+
+===
+title: Pool
+---
+You and your wife head to the pool.
+
+Wife: Do you remember our vacation we took before you went into the military? The resort at Laguna Beach?
+
+John: Of course I do. It's where I proposed to you.
+
+Wife: Arthur told me about the surprise proposal before we left. He said you were a great man, and that I shouldn't take you for granted.
+
+John: (tensing up) I know. This book really did help me cope with his loss.
+
+Wife: It was nice of you to allow him to sacrifice himself for you in your book. Definitely more noble than dying of hunger like what really happened.
+
+<<set $wifeKnowledge += 1>>
+
+-> Ask about Arthur
+    <<jump AskAboutArthur>>
+-> Change the subject
+    <<jump ChangeSubject>>
+
+===
+title: AskAboutArthur
+---
+John: Why do you keep bringing up Arthur?
+
+Wife: I... I just miss him sometimes. He was a good friend to both of us.
+
+John: I get that you miss Arthur, but I don't know why you always bring him up when talking about our relationship problems.
+
+Wife: John, I don't want to get into it now. Let's just have a good time.
+
+<<set $wifeKnowledge += 1>>
+
+<<jump PoolEncounter>>
+
+===
+title: ChangeSubject
+---
+John: Let's not talk about the past. We're here to relax and enjoy ourselves.
+
+Wife: You're right. I'm sorry for bringing it up.
+
+<<jump PoolEncounter>>
+
+===
+title: PoolEncounter
+---
+As you're relaxing by the pool, the theorist appears again.
+
+Theorist: Trouble in paradise? It likes when you fight. Makes it easier. Easier to...
+
+John: Look, man, I'm tired of your random rants. Can you leave me and my wife alone?
+
+Theorist: Why don't you listen, John? Why don't you do you and your wife a favor and run? Or do you want it to follow? Do you like it when it's close? So close that it can almost...
+
+<<set $entityAwareness += 1>>
+
+-> Confront the theorist
+    <<jump ConfrontTheoristPool>>
+-> Ignore the theorist
+    <<jump IgnoreTheoristPool>>
+
+===
+title: ConfrontTheoristPool
+---
+John: What are you talking about? What's following us?
+
+Theorist: The entity, John. It feeds on guilt and pain. And you... you reek of it.
+
+Wife: John, ignore this man. There's nothing chasing you, there's nothing hunting you.
+
+<<set $wifeKnowledge += 1>>
+
+-> Ask about the entity
+    <<jump AskAboutEntity>>
+-> Go back to your room
+    <<jump Room>>
+
+===
+title: AskAboutEntity
+---
+John: What is this entity you keep talking about?
+
+Theorist: It's a being that feeds off the pain of lost souls. And it's chosen you, John.
+
+John: Why me?
+
+Theorist: Because of what happened in the cave. The truth you've been hiding.
+
+<<set $entityAwareness += 2>>
+
+Wife: (forcefully) That's enough. We're leaving.
+
+<<jump Room>>
+
+===
+title: IgnoreTheoristPool
+---
+You ignore the theorist and try to enjoy your time at the pool.
+
+Wife: I'm glad you're not letting that man get to you. Let's just enjoy our vacation.
+
+<<jump Room>>
+
+===
+title: Room
+---
+You return to your room, feeling uneasy about the events of the day.
+
+John: (thinking) This cruise was supposed to help me relax, but I can't shake this feeling that something's not right.
+
+<<if $entityAwareness >= 5>>
+    <<jump Confrontation>>
+<<else>>
+    <<jump FinalNight>>
+<<endif>>
+
+===
+title: ExploreMore
+---
+As you explore the ship more, you encounter a man who recognizes you.
+
+Adam: Hey, aren't you the guy who wrote that book on being stuck in a cave?
+
+John: Yes, that was me. Are you a fan?
+
+Adam: You could say that. I'm actually a psychologist at Carnegie University. Your story is quite interesting, to say the least.
+
+-> Talk to Adam
+    <<jump TalkToAdam>>
+-> Excuse yourself
+    <<jump ExcuseYourself>>
+
+===
+title: TalkToAdam
+---
+Adam: To be tortured for weeks then finally escape but be the only one to survive, that must hurt. But the most interesting part is the fact that you wrote a book about it, with extremely gruesome detail.
+
+John: I appreciate your fascination with my work, but if you don't mind, I'm on vacation with my wife and I'd rather not talk about this.
+
+Adam: I respect that, but I do have one more question... did your friend really die in a hail of bullets as you put it?
+
+<<set $entityAwareness += 2>>
+
+-> Confront Adam
+    <<jump ConfrontAdam>>
+-> End the conversation
+    <<jump EndConversation>>
+
+===
+title: ConfrontAdam
+---
+John: Look, Adam, I have no interest in talking about this right now, especially with a stranger.
+
+Adam: I apologize for the intrusion. It's just that it told me that your book was a lie, and I wanted to clarify with you. It's been following you this whole trip. I thought you could see it too?
+
+John: It? What are you talking about?
+
+Adam: Yes, it. It's right behind you.
+
+<<set $entityAwareness += 2>>
+
+John: (turns around, sees nothing) I think it's time I go back to my room.
+
+<<jump Room>>
+
+===
+title: ExcuseYourself
+---
+John: I'm sorry, but I'm not really in the mood for a discussion. I appreciate you being a fan, though.
+
+<<jump Room>>
+
+===
+title: EndConversation
+---
+John: I think that's enough questions. Have a nice day, professor.
+
+<<jump Room>>
+
+===
+title: FinalNight
+---
+It's the final night of the cruise. You and your wife are at the bar.
+
+Wife: You know, this bar isn't too bad. The drinks taste like dog shit, but at least they get the job done.
+
+John: Honey, the drinks taste just fine. And you say I complain all the time...
+
+Wife: John, it's different. We spent God knows how much, and they still can't serve a good drink.
+
+-> Comfort your wife
+    <<jump ComfortWife>>
+-> Argue with your wife
+    <<jump ArgueWithWife>>
+
+===
+title: ComfortWife
+---
+John: Look, forget about the drink. We can buy 100 better ones back home. I know you tried, honey. I know you tried to give me a good time, and I'm feeling great. I feel better.
+
+Wife: You're right, I'm sorry honey. I've just been a little stressed on this trip. Just wanted to make sure this was going to be a trip that you'll never forget.
+
+John: Listen, despite our arguments, I really did enjoy this trip. I've come to accept some relaxation in my life thanks to you.
+
+<<jump FinalChoice>>
+
+===
+title: ArgueWithWife
+---
+John: You know what? I'm tired of your complaining. This whole trip was your idea, and now you're finding fault with everything.
+
+Wife: Oh, so now it's my fault? I'm just trying to make this trip perfect for you, to help you forget about...
+
+John: Forget about what? The cave? Arthur? Is that what this is all about?
+
+<<set $wifeKnowledge += 1>>
+
+<<jump FinalChoice>>
+
+===
+title: FinalChoice
+---
+Wife: Hey, isn't that the kid we saw earlier? The one looking for his mom. Looks like the crazy man is bothering them again.
+
+John: Yeah, we should... Wait, that's the guy that was asking me those weird questions about my book. Maybe I should go give him a piece of my mind.
+
+Wife: Honey, I just realized that I must have forgotten my locket by the pool. I need to go get it, it means too much to me to just forget it.
+
+-> Go help the kid
+    <<jump HelpKid>>
+-> Help wife find her locket
+    <<jump FindLocket>>
+-> Confront the theorist
+    <<jump ConfrontTheoristFinal>>
+
+===
+title: HelpKid
+---
+You decide to help the kid and confront the theorist.
+
+John: Hey, leave that kid alone! This whole trip you've been bothering everyone with your nonsense about seeing creatures.
+
+Theorist: No, the kid sees it too. Tell him, kid.
+
+Child: It won't go away. Mommy sees it too. It only comes when you're here, sir. What is it? I'm scared.
+
+<<set $entityAwareness += 2>>
+
+<<jump Confrontation>>
+
+===
+title: FindLocket
+---
+You go with your wife to find her locket.
+
+John: What does the locket look like?
+
+Wife: It's blue with a silver tree as the cover. It's hard to miss.
+
+John: Ok cool. Oh wait, is this it?
+
+You pick up the locket and open it.
+
+John: Oh that's sweet, it says Angelica. Wait, I don't remember buying you this.
+
+Wife: Really, you don't remember?
+
+<<set $wifeKnowledge += 2>>
+
+<<jump Confrontation>>
+
+===
+title: ConfrontTheoristFinal
+---
+You approach the theorist, determined to get answers.
+
+John: I don't know what your problem is, but I demand an apology for ruining my trip with me and my wife.
+
+Theorist: I apologize for ruining your trip. But you need to listen to me, John. We don't have much time.
+
+<<set $entityAwareness += 2>>
+
+<<jump Confrontation>>
+
+===
+title: Confrontation
+---
+<<if $entityAwareness >= 8>>
+    <<jump EntityReveal>>
+<<elseif $wifeKnowledge >= 3>>
+    <<jump WifeReveal>>
+<<else>>
+    <<jump AmbiguousEnding>>
+<<endif>>
+
+===
+title: EntityReveal
