@@ -1,7 +1,5 @@
 title: Chapter1_Start
 ---
-title: Chapter1
----
 <<set $exploredShip = false>>
 
 // Opening Scene
@@ -11,14 +9,14 @@ John (internal): "Honey, I went to get breakfast. Meet me in the dining room." T
 
 <<choice>>
     <<option "Explore the ship first.">>
-        <<jump ExploreShip>>
+        <<jump ExploreShip_A>>
     <<option "Go straight to the dining room.">>
         <<jump GoToWife>>
 <<endchoice>>
 
 ---
 
-title: ExploreShip
+title: ExploreShip_A
 ---
 <<set $exploredShip = true>>
 
@@ -26,17 +24,17 @@ title: ExploreShip
 Child: "Hey mister, can you help me find my mom? She said to wait, but it’s been an hour."
 
 <<choice>>
-    <<option "Sure kid, follow me to the dining room. She might be there." >> 
-        <<jump HelpChild>>
-    <<option "Ignore the kid and walk away." >>
-        <<jump IgnoreChild>>
-    <<option "Scold the kid." >> 
-        <<jump ScoldChild>>
+    <<option "Sure kid, follow me to the dining room. She might be there.">>
+        <<jump HelpChild_A>>
+    <<option "Ignore the kid and walk away.">>
+        <<jump IgnoreChild_B>>
+    <<option "Scold the kid.">>
+        <<jump ScoldChild_C>>
 <<endchoice>>
 
 ---
 
-title: HelpChild
+title: HelpChild_A
 ---
 Child: "Mooom! Why’d you leave me? I was outside our room!"
 Mother: "I told you to wait inside! I was getting food!"
@@ -49,7 +47,7 @@ Theorist: "This ship hides dark truths. The first voyage? Almost everyone died. 
 
 ---
 
-title: IgnoreChild
+title: IgnoreChild_B
 ---
 *John walks off. At the dining room, the Theorist confronts him.*
 
@@ -58,7 +56,7 @@ Theorist: "You shouldn’t have ignored him, John. Leave this ship before it’s
 
 ---
 
-title: ScoldChild
+title: ScoldChild_C
 ---
 John: "Shut up, kid. Don’t talk to strangers."
 Child: "My mom told me not to talk to strangers. But she didn’t say I couldn’t talk to a dead man."
@@ -88,16 +86,16 @@ Wife: "Glad you made it. This cruise is what you need. You’ve been through so 
 
 <<choice>>
     <<option "You’re right. I should enjoy this trip.">>
-        <<jump AgreeWithWife>>
+        <<jump AgreeWithWife_A>>
     <<option "Yeah, okay.">>
-        <<jump NeutralResponse>>
+        <<jump NeutralResponse_B>>
     <<option "This trip was a waste of money.">>
-        <<jump ArgueWithWife>>
+        <<jump ArgueWithWife_C>>
 <<endchoice>>
 
 ---
 
-title: AgreeWithWife
+title: AgreeWithWife_A
 ---
 Wife: "I’m glad you’re warming up to it. Trust me, this trip will change you."
 John: "You’re right. Let’s eat."
@@ -107,7 +105,7 @@ Theorist: "Do you love her, John? Then leave. The ship isn’t safe."
 
 ---
 
-title: NeutralResponse
+title: NeutralResponse_B
 ---
 Wife: "Lose the attitude, John. Let’s grab some food."
 *Theorist confronts them at the dining room.*
@@ -116,7 +114,7 @@ Theorist: "It feeds on your pain, John. Leave while you still can."
 
 ---
 
-title: ArgueWithWife
+title: ArgueWithWife_C
 ---
 John: "We could’ve done the same thing at home. Waste of money."
 Wife: "Don’t ruin this trip. Let’s eat before I cause a scene."
