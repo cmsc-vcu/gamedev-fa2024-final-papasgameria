@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cfc45fa1e0c823b458f6efe54712a298
+guid: 818ea22186c1bb64aa0662f33c60319e
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,7 +121,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Quit Button
+  - name: Night_Pool
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -130,9 +130,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 35
-      height: 8
-    spriteID: 1354fee08d9ef8b49bf587e625105303
+      width: 320
+      height: 180
+    spriteID: 46647d78bfd631d44b5bca906165c8ae
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,21 +144,21 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1567751623
-    name: Quit Button
+    guid: 1628513043
+    name: Night_Pool
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Quit Button
+    - name: Night_Pool
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
-        width: 35
-        height: 8
-      spriteId: 1354fee08d9ef8b49bf587e625105303
+        width: 320
+        height: 180
+      spriteId: 46647d78bfd631d44b5bca906165c8ae
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -177,4 +177,4 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 35, y: 8}
+  canvasSize: {x: 320, y: 180}
