@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f8c8c39594e0fa5448229052cc584373
+guid: 7d2a7e6dc83e5c14695e11bc34c91576
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,7 +121,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Play Button
+  - name: Night_Pool
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -130,9 +130,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 40
-      height: 8
-    spriteID: 707433eb1d375dc40b125c14ffdea085
+      width: 320
+      height: 180
+    spriteID: 79852dbf8c090874dafcb6b36170c0e5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,21 +144,21 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1832002456
-    name: Play Button
+    guid: 1628513043
+    name: Night_Pool
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Play Button
+    - name: Night_Pool
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
-        width: 40
-        height: 8
-      spriteId: 707433eb1d375dc40b125c14ffdea085
+        width: 320
+        height: 180
+      spriteId: 79852dbf8c090874dafcb6b36170c0e5
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -177,4 +177,4 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 40, y: 8}
+  canvasSize: {x: 320, y: 180}
