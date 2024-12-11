@@ -132,7 +132,11 @@ ScriptedImporter:
       y: 4
       width: 74
       height: 8
+<<<<<<< Updated upstream
     spriteID: ee901515fe23cb54499c91509f60a12f
+=======
+    spriteID: 33f04f73f04191d4a95945048bc15e6d
+>>>>>>> Stashed changes
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -158,7 +162,11 @@ ScriptedImporter:
         y: 0
         width: 74
         height: 8
+<<<<<<< Updated upstream
       spriteId: ee901515fe23cb54499c91509f60a12f
+=======
+      spriteId: 33f04f73f04191d4a95945048bc15e6d
+>>>>>>> Stashed changes
     linkedCells: []
     parentIndex: -1
   platformSettings:
