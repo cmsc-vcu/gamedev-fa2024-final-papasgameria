@@ -1,0 +1,175 @@
+﻿title: Chapter3_Start
+---
+John Bennet and his Angelica are at the bar.
+
+<i>We only have one more night left on this strange ship. Spending time at the bar and watching performances sounds like a great way to end the trip. Angelica has been acting distant lately. I get that she doesn’t think I care about this trip, but I do. I appreciate the effort she puts into fixing our marriage, into fixing me.</i>
+Angelica: You know this bar isn't too bad. The drinks taste like dog shit but at least they get the job done.
+John: Honey, the drinks taste just fine. And you say I complain all the time…
+Angelica: John, it's different. We spent God knows how much and they still can't serve a good drink. I mean where does all that money go? On some bs paintings that cost thousands? On the chef who can't make a good Goddamn egg omelet? Is this asking for too much?
+John: I think you need to slow down on the drinks. Everything is just fine. I know you tried, honey. I know you tried to give me a good time and I’m feeling great. I feel better.
+Angelica: This isn’t about you, John. This is about how this bartender can’t give me a good Goddamn drink. I mean, John, I tried so hard to make it taste good, I really did, but I can’t hide how awful this is.
+John: Look, forget about the drink. We can buy 100 better ones back home.
+Angelica: You’re right. I’m sorry, honey. I’ve just been a little stressed on this trip. I just wanted to make sure this was going to be a trip that you’ll never forget. Help you relieve some of the pain away.
+John: Listen, despite our arguments, I really did enjoy this trip. I’ve come to accept some relaxation in my life thanks to you. And hey, although I may not forget the past, at least I know you’ll be with me no matter what. Let’s just have a great night.
+Angelica: Hey, isn’t that the kid we saw earlier? The one looking for his mom. Looks like the crazy man is bothering them again.
+John: Yea, we should… Wait, there is that guy that was asking me those weird questions about my book, ruining my trip with you. Maybe I should go give him a piece of my mind.
+Angelica: Honey, I just realized that I must have forgotten my locket by the pool. I need to go get it, it means too much to me to just forget it.
+-> Go to kid and help dispel the theorist away. 
+    <<jump CH3Choice1>>
+-> Help Angelica find her favorite locket.    
+    <<jump CH3Choice2>>
+-> Go confront Adam for ruining your trip. 
+    <<jump CH3Choice3>>
+===
+
+title: CH3Choice1
+---
+John: I'm sorry honey, but I have to go help that kid. I won't feel right unless I do.
+// Enter child and theorist
+John: Hey, leave that kid alone! This whole trip you've been bothering everyone with your nonsense stories of seeing creatures. I'm going to tell you one more time before we have an actual problem.
+Theorist: No, the kid sees it too. Tell him kid.
+Child: It won't go away. Mommy sees it too. It only comes when you're here, sir. What is it? I'm scared.
+John: Ok, I don't know what you told the kid or what you did to him, but you need to stop.
+Theorist: John, why do you keep ignoring it? It knows what you've done. Unless you don't? That would make sense… John, did you forget.
+John: If you are trying to scare me, it worked. Why is everyone on this ship bringing up my past? I came here to forget, came here to try to live a normal life. But now my past always finds a way to come back. Will all great Neptune’s ocean not wash this blood clean from my hand?
+Theorist: So that's why it keeps following. You've forgotten what really happened. Or have you? If you want it to go just simply remember, embrace it John, embrace the truth.
+Child: Like when your friend betrayed you, sir.
+John: I've got to go find my Angelica…
+Theorist: And why hasn't she helped you? She's seen it too, I can tell. I even saw her talking with it when you weren't there. Is she not telling you this?
+-> Hear the theorist out. 
+    <<jump CH3Choice1A>>
+-> Ignore and go to Angelica. 
+    <<jump CH3Choice1B>>
+===
+
+title: CH3Choice1A
+---
+John: She's seen it too?
+Theorist: Oh no.
+John: What?
+Theorist: Before it consumes, before it wins, go find your Angelica. Go tell her the truth. This is the key to your survival, to everyone’s.
+John: Tell her what truth?
+Theorist: John this isn't the first time that it has consumed. This ship has a history, a really dark one. John, don't let it win. Not again.
+John: Look, this thing, whatever you guys are seeing, I don't want it to hurt my Angelica so you're going to have to give me a lot more than your damn riddles to help her.
+Theorist: I thought this whole time it was trying to consume you, take control of your body so you can be the next vessel for its homicidal run. But no, it was her this whole time. Go save her John before it kills us all.
+    <<jump ConfrontAngelica>>
+===
+
+title: CH3Choice1B
+---
+John: Look, you guys must be having a folie à deux of some kind so I'll leave you guys to your conspiracies.
+// Transition from hall to pool
+    <<jump HelpAngelica>>
+===
+
+title: CH3Choice2
+---
+John: Of course, let's go find your locket.
+    <<jump HelpAngelica>>
+===
+
+title: CH3Choice3
+---
+John: I'm sorry honey, but I have to ask that man some questions right now. I'll help you look for it later.
+Angelica: Of course, I am always your second priority. That's fine, just go talk to that stranger while your Angelica looks for something that means the most to her.
+John: No, I didn't mean it like that.
+Angelica: It's fine, just go.
+    <<jump ConfrontAdam>>
+===
+
+title: ConfrontAdam
+---
+John: Hey, I don't know what your problem is but I demand an apology for ruining my trip with me and my Angelica. I came here to escape the past, not worry about it but you had to bring up my book.
+Adam: I apologize for ruining your trip.
+John: That's it? Oh I thought you would put up more of a fight.
+Adam: Look, I'll be honest with you because we don't have much time. I am indeed a professor of psychology, but my concentration of study is pseudoscience or more specifically paranormal activities. I came across your book and did some research, to verify if what you said was true but while researching I came across this entity, this being that feeds off of the pain of lost souls. 
+Adam: I'm sure you don't remember but I was a guest at one of your book signings and that's when I came across this entity in person. At first, I was scared and wanted to end my search but what fascinated me, what made me stay was the fact that you never saw it too. I mean I am not the only one who sees, that man that keeps approaching you sees it too. It follows you everywhere, but you don't seem to see.
+John: Ok man, you're starting to scare me, you're not the first person to say this and it's starting to worry me. Wait, did you follow me on this ship, stalk me just to tell me that you are seeing delusions?
+Adam: Yes John, this wasn't an accident. But let me continue if you don't mind. Not only can I see it but I can hear it. It tells me all your lies John, like how your best friend didn't die from a sacrifice. That in fact he did make it out alive, until…
+John: How do you know this? Who is telling you this? It's a lie ok, just people trying to change my story. Change what I saw. You think I want to live through this pain, through these memories. I just want it to stop man, just for them to all end. I thought my book would help cope with them but it never helped. Nothing does man.
+Adam: Listen John, you don't have much time. This entity, this being that is following you, I learned one more thing about it. Something you might want to hear.
+-> Hear Adam out. 
+    <<jump CH3Choice3A>>
+-> Ignore and go to Angelica. 
+    <<jump CH3Choice3B>>
+===
+
+title: CH3Choice3A
+---
+Adam: It's only awakened if invited by someone close, someone who already knows your trauma and pain, someone like your Angelica. What it does is promise them anything they want as long as a vessel is given, a vessel that it may control. Look, I don't know if your Angelica had ill intentions but she woke this being up and if you don't confront her it will…
+John: I want to believe you, I really do but…
+Adam: John trust me, if you keep ignoring this it will do unspeakable things to not only you but anyone else it's able to consume. Just do this, at least ask her about it. For everyone's sake.
+John: This trip, everything about this trip, has been off so if what you say is even remotely true I have to stop this before it gets worse.
+    <<jump ConfrontAngelica>>
+===
+
+title: CH3Choice3B
+---
+John: Look, even if this is all true, I know my Angelica. She wouldn't do anything that you're suggesting. I thank you for the help you are trying to give but if you don't mind, I am going to enjoy the rest of my vacation with my wife.
+Adam: John, don’t do this.
+John: Goodbye Adam, I appreciate the apology.
+    <<jump HelpAngelica>>
+
+===
+
+title: ConfrontAngelica
+---
+John: Honey, we have to talk.
+Angelica: What is it? I'm trying to find my locket.
+John: Forget the damn locket, listen I know this sounds crazy but there is this entity that everyone keeps mentioning that…
+Angelica: Stop right there John. I know.
+John: You know about this entity? Why haven't you told me this entire time? How long have you known?
+Angelica: Why didn't you tell me what really happened in the caves? I get why you lied in your books but why lie to me.
+John: Because I was ashamed, because…
+Angelica: He didn't really die sacrificing himself did he? You killed him. But why? Why do that to your best friend, to Arthur.
+John: He told me. In the caves he thought he was going to die before we found the underground escape so he confessed. He told me about the affair. I had some hints before but he confirmed it. So out of rage and fear of losing you I did what I thought was necessary. 
+John: You don't understand honey what happened in those caves, what we had to do. Killing him was my only option. Arthur couldn't have made it out alive and ruin my marriage, my reputation.
+Angelica: So you killed him just like that huh? Your closest friend. Like it was nothing. Just because me and him hooked up once or twice. C'mon, John we were drunk and it just happened. Was it really worth his life?
+John: It wasn't easy. He was my best friend. Of course I didn't want to. But I don't know what took over me, I don't know what the caves did to me but I had this urge to just finish it all. Eliminate everything that was related to the cave so I could never remember. He was the last thing standing in the way.
+Angelica: It's ok John, we can just forget this ever happened. Forget this trip and let's just go somewhere nice.
+John: No, it's not. I lied to the world with my book, I lied to you, and most importantly I lied to myself. Forgetting what I did, forgetting Arthur won't fix things. I have to come clean.
+Angelica: No honey it was the caves that did this to you don't worry about what happened. Let's just enjoy the rest of this trip.
+John: Did you talk to the entity? Did you want it to consume me?
+Angelica: John whatever your hearing isn't true. There are people here who just want to drive you crazy, make you see things and tell you that I want to sacrifice your body to bring Arthur back. You're right, this cruise trip wasn't worth it, I should have read the reviews before we came.
+John: I never said anything about sacrificing me to bring Arthur back. Is that what the entity is telling you? If I die Arthur will come back.
+Angelica: No honey you're just hearing things, don't let these crazy people give you these ideas.
+John: I'm tired of lying to myself. Of forgetting the past, hoping the memories would just go away. I killed my best friend and my Angelica is a cheater. Whatever deal you made with this entity to kill me to bring Arthur back, I deserve it. He was a good man and he didn't deserve death. Do what is needed. I am a fraud.
+Angelica: I don't know what you are talking about. Ok sure I saw this creature but sacrificing you to bring back Arthur, that's crazy. John just think about it, do you really think I would hurt you babe.
+John: Honey I dont think I can ever forgive you. We are done. I can't keep lying to myself and act like everything is fine. I deserve to remember, to come clean.
+Angelica: No! You can't remember, you have to forget. You have to. It needs your pain John. It wasn't supposed to be this way!!!
+Entity laughs: Times up.
+*Angelica explodes.*
+    <<jump Epilogue>>
+===
+
+title: HelpAngelica
+---
+John: What does the locket look like?
+Angelica: It's blue with a silver tree as the cover. It's hard to miss.
+John: Ok, cool. Oh wait, is this it?
+// *John picks up the locket and opens it up.*
+John: Oh that's sweet, it says Angelica. Wait, I don't remember buying you this.
+Angelica: Really you don't remember?
+John: No. And I don't know why it says Angelica, everyone calls you Angy even your parents. Only I called you Angelica and…
+Angelica: What's wrong?
+John: Angy… do you see the entity like everyone else? Do you see it too?
+Angelica: It's too late John. You know it wanted me to come here, promised me to bring Arthur back if I sacrifice you, like how you sacrificed him.
+John: How could you… Do such evil? I was willing to forget about you cheating and now you want to kill me, for Arthur?
+Angelica: It was supposed to be him that came back John, not you.
+John: You don't think I think about that everyday. How much regret I have for killing him. Killing him for you.
+Angelica: For me? Oh John if you ever cared about me you would have spared Arthur's life. But that's in the past. It is ready for me. Ready to keep its end of the bargain, if I do mine.
+John: Do wha-
+// *Angy Stabs John and Entity Laughs in the background.*
+Angy: Shusssh, enjoy your last breath, look at the pool. Don't worry, your pain will go away. It will just be me and Arthur again.
+<<jump EndChapter>>
+
+===
+
+title: Epilogue
+---
+<i>Seeing my Angelica explode in front of me because she failed to sacrifice me to a demon that promised to bring back my dead best friend wasn't on my bingo card for this trip. But you live and you learn I guess.</i>
+<i>Whatever happens, happens. I'll have to just accept it. No more forgetting, no more lies. So when I leave this godforsaken ship I'm coming clean. Might lose some sponsors, money, friends but it's much better than hiding, than letting my past control me. Good riddance.</i>
+<i>You know what, maybe I should write a second book.</i>
+
+*The End.*
+===

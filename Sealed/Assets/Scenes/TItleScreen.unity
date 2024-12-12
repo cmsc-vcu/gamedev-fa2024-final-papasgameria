@@ -5232,7 +5232,6 @@ GameObject:
   - component: {fileID: 623631722}
   - component: {fileID: 623631721}
   - component: {fileID: 623631720}
-  - component: {fileID: 623631723}
   m_Layer: 5
   m_Name: Setting Button
   m_TagString: Untagged
@@ -5353,21 +5352,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 623631718}
   m_CullTransparentMesh: 1
---- !u!114 &623631723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 623631718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8025c064da6a6ff49befbdd8d7dc6090, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeImage: {fileID: 0}
-  fadeDuration: 1
-  levelName: 
 --- !u!1 &758054318
 GameObject:
   m_ObjectHideFlags: 0
@@ -5598,7 +5582,6 @@ GameObject:
   - component: {fileID: 1295062830}
   - component: {fileID: 1295062829}
   - component: {fileID: 1295062828}
-  - component: {fileID: 1295062831}
   m_Layer: 5
   m_Name: Quit Button
   m_TagString: Untagged
@@ -5719,21 +5702,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1295062826}
   m_CullTransparentMesh: 1
---- !u!114 &1295062831
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1295062826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8025c064da6a6ff49befbdd8d7dc6090, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeImage: {fileID: 0}
-  fadeDuration: 1
-  levelName: 
 --- !u!1 &1414315947
 GameObject:
   m_ObjectHideFlags: 0
@@ -5746,7 +5714,6 @@ GameObject:
   - component: {fileID: 1414315951}
   - component: {fileID: 1414315950}
   - component: {fileID: 1414315949}
-  - component: {fileID: 1414315952}
   m_Layer: 5
   m_Name: Play Button
   m_TagString: Untagged
@@ -5867,21 +5834,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1414315947}
   m_CullTransparentMesh: 1
---- !u!114 &1414315952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1414315947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8025c064da6a6ff49befbdd8d7dc6090, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeImage: {fileID: 0}
-  fadeDuration: 1
-  levelName: Chapter1
 --- !u!1 &1855905072
 GameObject:
   m_ObjectHideFlags: 0

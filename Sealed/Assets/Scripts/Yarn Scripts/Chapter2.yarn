@@ -1,0 +1,202 @@
+title: Chapter2
+---
+<i>You know the breakfast isn't too bad. Anything is better than my time in the cave. Even after the fame and money from my book about my time in the cave, I still never get used to good food. My taste buds have never been the same. Not after what I had to do to survive. I do appreciate my wife trying to distract me and help me relax for once after my book tour, but it never feels like I am really relaxing; the memories never go away unless I keep myself busy. Maybe it's best if my wife and I go… </i>
+-> Go explore more of the ship
+    <<jump CH2Choice1>>
+-> Go to the pool with Angelica
+    <<jump CH2Choice2>>
+===
+
+title: CH2Choice1
+---
+Angelica: Hey John, I really appreciate you trying to take a break. I know it's a lot to ask for you to not think about the incident, but just give it time.
+Angelica: We can start fresh, cash in the book tour and live the quiet life somewhere. Maybe Switzerland? I hear they have great cabins in the woods, far from the internet. 
+John: You're right. It is hard to move on, but with you here it's becoming easier by the day. 
+Angelica: Love you sweetie. 
+John: Love you honey. 
+Angelica: I'm going to go to the pool to cool off, coming with? 
+-> Sure, but I wanted to explore this ship a little more. I'll meet you down there in a bit. 
+    <<jump CH2Choice1A>>
+-> Seriously? Right now? I don't want to. I'm full from breakfast.
+    <<jump CH2Choice1B>>
+-> We just finished eating breakfast. Why is your ass always trying to do something? So damn annoying. I'm going to go walk around.
+    <<jump CH2Choice1C>>
+===
+
+title: CH2Choice2
+---
+Angelica: Hey John, I really appreciate you trying to take a break. I know it's a lot to ask for you to not think about the incident, but just give it time.
+Angelica: We can start fresh, cash in the book tour and live the quiet life somewhere. Maybe Switzerland? I hear they have great cabins in the woods, far from the internet. 
+John: You're right. It is hard to move on, but with you here it's becoming easier by the day. 
+Angelica: Love you sweetie. 
+John: Love you honey. 
+Angelica: I'm going to go to the pool to cool off, coming with? 
+-> Of course honey, a swim sounds nice right now. 
+    <<jump CH2Choice2A>>
+-> Yeah, I guess.
+    <<jump CH2Choice2B>> 
+-> Hell yeah. Maybe I'll talk to some of those pretty ladies I've been seeing around the ship, they're probably not as demanding as you.
+    <<jump CH2Choice2C>>
+===
+
+title: CH2Choice1A
+---
+Angelica: Sure honey, I'll see you soon.
+// Transition from room to hallway
+Adam: Hey, aren't you the guy who wrote that book about being stuck in a cave? 
+John: Yes, that was me. Are you a fan? 
+Adam: Something like that. My name is Adam and I'm actually a psychologist at Carnegie Mellon. Your story is quite interesting to say the least. To be tortured for weeks then finally escape, being the sole survivor. That must hurt. 
+Adam: The most fascinating part was the fact that you wrote about it with extremely gruesome detail, portraying it as if we readers were there ourselves! Amazing penmanship really.
+John: I appreciate your fascination with my work, but if you don't mind, I'm on a vacation with my wife and I'd rather not talk about this right now. 
+Adam: I respect that, but I do have one more question... Did your friend really die in a hail of bullets like you said? I mean you said he sacrificed himself to help you escape but never really explained why he had to do that. Why couldn't he have left with you?
+John: Look, Adam, was that your name? I have no interest in talking about this right now, especially with a stranger. Leave me alone, I really don't want this to get ugly. 
+Adam: I'm very sorry, I mean no harm. It's just that <i>it</i> told me that your book was a lie and I wanted to clarify with you. 
+John: It? 
+Adam: Yes, it's right behind you. 
+<<wait  2>>
+// Turns around, no one there
+John: Um... you know what? It was nice talking to you, but I'm going to go back to my room.
+// Transition from hallway to room
+<i>This is the second time today someone mentions something, or someone, that's after me. Honestly, this entire trip has been feeling off lately and I haven't felt this sense of primal fear since...</i>
+<<wait  2>>
+<i>I think I'll just stay in my room until Angelica gets back.</i>
+<<jump EndChapter2>>
+===
+
+title: CH2Choice1B
+---
+Angelica: I don't know why you're giving me this attitude when I'm just trying to make you happy. You know what, just stay in the room, I'll go to the pool by myself.
+John: No honey, I didn't mean it like that...
+Angelica: No, it's fine. I'll see you later.
+// Angelica leaves
+John: Well shit. I mean no point of me staying in here. 
+// Transition from room to hallway
+Adam: Hey, aren't you the guy who wrote that book about being stuck in a cave? 
+John: Yes, that was me. Look I'm not really in the mood for discussion, but I appreciate your support. 
+Adam: This won't take up much of your time, I promise. 
+Adam: My name is Adam and I'm actually a psychologist at Carnegie Mellon. Your story is quite interesting to say the least. To be tortured for weeks then finally escape, being the sole survivor. That must hurt. 
+Adam: The most fascinating part was the fact that you wrote about it with extremely gruesome detail, portraying it as if we readers were there ourselves! Amazing penmanship really.
+John: It's not all true. The gruesome details were far worse than I could describe in words.
+Adam: Excuse me? 
+John: Look, Adam, was that your name? I have no interest in talking about this right now, but if you really care I'll just tell you this. Those two weeks in that cave is something I wouldn't wish upon my worst enemies. 
+John: Not just my best friend, but other soldiers as well. Their suffering and agony plays on repeat every time I wake up and every time I go to bed. My book is just the fairytale version of what happened because no human, no monster, no one should know what really took place in that cave. Quote that. 
+Adam: I understand now. I understand why <i>it</i> chose you. You really are something special. I didn't believe it at first, but you are just what it needs. 
+John: It? 
+Adam: Yes, do you not see it behind you? 
+<<wait  2>>
+// Turns around, no one there
+John: Um... you know what? It was nice talking to you, but I'm going to go back to my room.
+// Transition from hallway to room
+<i>This is the second time today someone mentions something, or someone, that's after me. Honestly, this entire trip has been feeling off lately and I haven't felt this sense of primal fear since...</i>
+<<wait  2>>
+<i>I think I'll just stay in my room until Angelica gets back.</i>
+<<jump EndChapter2>>
+===
+
+title: CH2Choice1C
+---
+Angelica: What the hell? I bring you on vacation to take your mind off things, off the pain and suffering you've been through. And this is how you treat me. You're pathetic.
+Angelica: You know what? You can look around as long as you want. Come back to me when you realize what you're missing.
+John: Finally some peace and quiet. 
+Angelica: Screw you, John. Enjoy your peace and quiet for the rest of the trip. 
+// Angelica leaves
+Angelica: Might as well make use of my free time. 
+// Transition from room to hallway
+Adam: Hey, aren't you the guy who wrote that book about being stuck in a cave? 
+John: What? You a fan? 
+Adam: Matter of fact, I am. My name is Adam and I'm actually a psychologist at Carnegie Mellon. Your story is quite interesting to say the least. To be tortured for weeks then finally escape, being the sole survivor. That must hurt. 
+Adam: The most fascinating part was the fact that you wrote about it with extremely gruesome detail, portraying it as if we readers were there ourselves! Amazing penmanship really.
+John: I wasn't the only one to survive.
+Adam: What? 
+John: When I escaped the tunnel, I wasn't the only one that survived. Something else came back with me. Something dark and cruel, following me everywhere I go. No matter what I do, the press tours, the trips, spending time with my wife. Nothing stops it. 
+John: You said you taught psychology, right <i>professor</i>? Tell me what it is that keeps haunting me.
+Adam: Well, the easy answer would be trauma. But, no. I don't think it's that. Trauma would not affect you the way you describe. This sounds more deeply rooted. This sounds like guilt. 
+Adam: Guilt leaves a stain that you can never wash away, following you at your highs and lows in life. By why, why feel guilt when you've suffered so much. I wonder...
+Adam: Could it be because you don't think your life was worth his or because... his sacrfice didn't mean anything. 
+John: Okay, that's enough questions. I appreciate your insights professor, but mind your own business. You want an autograph or something? 
+Adam: Mr. Bennett right? Did he really sacrfice himself? Did he really place his life on the line for you? Or was it something else? 
+John: If you really want to know the truth, he didn't sacrfice himself. He already died before I left. Died of starvation like the other soldiers, but because he was my closest friend I gave him an honorable end. There is that ending you really wanted. 
+Adam: That would make more sense. But, I'm not sure. I did take a look at the autopsy report and it said that Arthur had bullet wounds. To the neck and chest. So which ending did he really have? The noble death, the starvation, or the event that gave you all this guilt. 
+// John nervous face? 
+John: I'll be returning to my room professor, it was nice chatting with you...
+// Transition from hallway to room
+<i>Maybe it is time I told the truth. Tell Angelica what really happened.</i>
+<<jump EndChapter2>>
+
+
+title: CH2Choice2A
+---
+Angelica: Great! Let's go!
+// Transition from room to pool
+Angelica: Do you remember our vacation we took before you went into the military? The resort at Laguna Beach?
+John: Of course I do. It's where I proposed to you. I was nervous as hell that night but seeing your face the moment I went down on my knees, all my worries and fear went away.
+John: You reassuring me that we would spend the rest of our lives together is something I never forget.
+John: Honey, you are the reason I get up in the morning despite the pain and sorrow because I know you you'll have my back and make it all go away. 
+Angelica: And I know you will always be there for me too, honey! But, the reason I brought that up was because before we left for Laguna, Arthur told me about the surprise.
+Angelica: Don't worry it wasn't on purpose, it just accidentally slipped out when we were drinking that night. But what he said after still touches me to this day. 
+Angelica: He said, "You've got a great man on your hands, I've known him for 20 years and I can't think of one reason why he won't be a good husband. All the best qualities of loyalty, dedication, and love, he’s got those and more. So don't take this man for granted because it will be the best 30 years of your life. 30 years because I know this fool will die doing some stupid shit before the age of 40. But seriously don't let this man go. Ever."
+Angelica: I miss Arthur sometimes, John. He was also a good man. 
+John: I know. Writing the book really did help me cope with his loss. Let him live forever through my words and share to the world what a good man he was. Most importantly, we gave him the ending he deserved. 
+Angelica: It was nice of you to allow him to sacrifice himself for you in your book. Definitely more noble than dying of hunger.
+John: That's what my best friend deserved. 
+// Enter theorist
+Theorist: Hunger? Sacrifice? Come on John, we both know he had a much more exciting ending. 
+John: Didn't we tell you to leave us alone? Back off man. 
+Theorist: Loyalty over anything, isn't that what you servicemen say? Where was that when it mattered most, John? Where has your honor gone? Did you bury it with the rest of your memories? 
+Theorist: I digress, it doesn't matter now. It's so close that it can almost...
+<<wait  2>>
+// John feels a touch behind him
+Angelica: You know what? Let's just go back to our room and get ready for bed. 
+John: Sounds good with me. 
+<<jump EndChapter2>>
+===
+
+title: CH2Choice2B
+---
+Angelica: John, I know you don't like to go out much, but can you just try to enjoy this cruise. Staying in the room all day will just make it worse for you. Let's just go to the pool and have fun. 
+John: You're right, I'm sorry. Let's go. 
+// Transition from room to pool
+Angelica: Do you remember our vacation we took before you went into the military? The resort at Laguna Beach?
+John: Of course I do. It's where I proposed to you. I was nervous as hell that night but seeing your face the moment I went down on my knees, all my worries and fear went away.
+John: You reassuring me that we would spend the rest of our lives together is something I never forget.
+John: Honey, you are the reason I get up in the morning despite the pain and sorrow because I know you you'll have my back and make it all go away. 
+Angelica: And I know you will always be there for me too, honey! But, the reason I brought that up was because before we left for Laguna, Arthur told me about the surprise.
+Angelica: Don't worry it wasn't on purpose, it just accidentally slipped out when we were drinking that night. But what he said after still touches me to this day. 
+Angelica: He said, "You've got a great man on your hands, I've known him for 20 years and I can't think of one reason why he won't be a good husband. All the best qualities of loyalty, dedication, and love, he's got those and more. So don't take this man for granted because it will be the best 30 years of your life. 30 years because I know this fool will die doing some stupid shit before the age of 40. But seriously don't let this man go. Ever."
+Angelica: I miss Arthur sometimes, John. He was also a good man. 
+John: He was a good man. I miss him too. Despite bringing me a great deal of trauma this book also helps me remember the fun memories we had, the reason why he was my closest friend.
+Angelica: I know. It was nice of you to allow him to die by sacrificing himself for you in your book. Much more noble than starving to death. 
+John: He deserved the best ending to his story. 
+Angelica: He would always also give me good advice on how to deal with our marriage problems. You know even before the cave event you still didn't want to go out with me, you know hike, shopping, drive across state lines. Always playing your video games with your friends. But Arthur did remind me that others show love in different ways and yours just wasn't going out which I realize is fine.
+John: I get that you miss Arthur, but I don't know why you always bring him up when talking about our relationship problems. Like he can fix them all. He's not a perfect man, he got divorced twice before turning 25. 
+Angelica: John, I don't want to get into this right now. Let's just have a good time. 
+// Enter theorist
+Theorist: Trouble in paradise? It likes when you fight, makes it easier... Easier to-
+John: Look man, can you just leave us alone. I'm tired of your rants. 
+Theorist: Why won't you listen John? Why don't you do you and your wife a favor and run? Or, maybe, you want it to follow. Do you like when it's close? So close that it can almost... 
+<<wait  2>>
+// John feels a touch behind him
+Angelica: John. Ignore him, there's nothing chasing you, there's nothing hunting you. He's just trying to scare you for his own enjoyment. Pay no attention to him, let's just enjoy ourselves. 
+John: Yeah... sounds good to me. 
+<<jump EndChapter2>>
+===
+
+title: CH2Choice2C
+---
+Angelica: Those pretty ladies? Really John? That's really pathetic. I'm done with you always complaining when all I do is try to fix this relationship, fix your issue. But, no. You just want to tear it down, tear me down. John, you really have no compassion, can at least act like you're getting better?  
+John: Getting better? You think taking me on a nice trip would make me forget? Forget everything that's happened? I will never forget and I don't want to. 
+Angelica: Oh, you don't want to forget is that right? You've got to be kidding me. You think it's fun to wake up to you screaming in pain, screaming for it to go away. You really are a selfish person. You don't see how your pain affects those around you. I try to be a better wife to you and understand all of what you do, but you don't even try.
+John: I'm not some broken toy that you need to fix. Any problem I've got, I can fix on my own. I go on your trips and give you everything I have, but you still complain that I give you nothing. How much more do you want from me? 
+John: Do you want me to go on two hikes a week, take you shopping everyday, go to the bar with you every night? Look, I don't want much from you. I just want to spend time together at home, I dont get why you don't want the same.
+Angelica: You know what? Arthur was right, you are a lazy man. Don't want to get up off your ass and do something with your life. Even before the incident, you didn't want anything to do with me. Arthur told me it's just who you are but I don't know if that justifies it. 
+John: I don't like anything to do with you? I've given you the world, everything I have and despite what I've gone through, you say I do nothing. And keep Arthur's name out of your damn mouth. Even when he's dead, you like bringing him up like he's a saint. He did not live a perfect life, I would know. So, don't you dare compare me to him.
+Angelica: You're right, you're not him. He was a better man than you. 
+John: That's it. I'm going back to the room. You can find your way back. 
+Angelica: Yeah, run away like you always do. I try get your mind off things by taking you on this once in a lifetime cruise, and you <i>ruin</i> it. Maybe this trip helped me learn something about you.
+<<jump EndChapter2>>
+===
+
+title: EndChapter2
+---
+<<stop>>
+===
