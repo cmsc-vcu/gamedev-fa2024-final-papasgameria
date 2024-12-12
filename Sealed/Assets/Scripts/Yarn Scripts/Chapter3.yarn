@@ -1,9 +1,9 @@
-﻿title: Chapter3_Start
+﻿title: Chapter3
 ---
 John Bennet and his Angelica are at the bar.
 
 <i>We only have one more night left on this strange ship. Spending time at the bar and watching performances sounds like a great way to end the trip. Angelica has been acting distant lately. I get that she doesn’t think I care about this trip, but I do. I appreciate the effort she puts into fixing our marriage, into fixing me.</i>
-Angelica: You know this bar isn't too bad. The drinks taste like dog shit but at least they get the job done.
+Angelica: You know this bar isn't too bad. The drinks taste like shit but at least they get the job done.
 John: Honey, the drinks taste just fine. And you say I complain all the time…
 Angelica: John, it's different. We spent God knows how much and they still can't serve a good drink. I mean where does all that money go? On some bs paintings that cost thousands? On the chef who can't make a good Goddamn egg omelet? Is this asking for too much?
 John: I think you need to slow down on the drinks. Everything is just fine. I know you tried, honey. I know you tried to give me a good time and I’m feeling great. I feel better.
@@ -59,6 +59,7 @@ title: CH3Choice1B
 ---
 John: Look, you guys must be having a folie à deux of some kind so I'll leave you guys to your conspiracies.
 // Transition from hall to pool
+    <<Scene Night_Pool>>
     <<jump HelpAngelica>>
 ===
 

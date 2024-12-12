@@ -1,9 +1,112 @@
-title: Title
+title: Chapter1
 ---
-John Bennett wakes up with a message on the dresser
+// Pick up note and read out loud
+John: "Honey, I went to go get breakfast. Meet me in the dining room."
+<i> I love her to death, but sometimes she can be a pain in the ass. I was perfectly fine watching Bodyguard and drinking my 6-pack. We can bond over sitting on my damn couch not going on a $25,000 cruise. But the SS Neptune isn't too bad. Has some decent food and sturdy floors. There are some weird characters here, I don’t know about staying another 2 days here. I better get going, the Misses is waiting… or let me see what else the ship has to offer.</i>
+-> Explore ship then meet Angelica later
+    <<jump Choice1>>
+-> Go straight to your Angelica
+    <<jump Choice2>>
+===
 
-John
+title: Choice1
 ---
+John: Let me check out the ship first. She can wait for a bit.
+Child: Hey mister, could you help me find my mom? She told me to wait here, but it’s been an hour.
+-> Sure kid, why don't you follow me to the dining room. She might be there getting you food.
+    <<jump Choice1A>>
+-> Ignore the kid and walk away
+    <<jump Choice1B>>
+-> Shut up, kid. Don’t you know how to not talk to strangers?
+    <<jump Choice1C>>
+===
+
+title: Choice1A
+---
+Child: Mooom! Why’d you leave me? I was waiting outside our room for you.
+Mother: Oh, I’m so sorry, sweetie. I told you to wait in the room. I was going to come with food.
+Child: I know, but I kept hearing the bald man screaming outside my room. He keeps telling me that I should have gone for the head.
+John: What did you just say?
+Child: Mom, who is this guy?
+Mother: Oh, I was just talking to this nice gentleman. He was telling me this ship has been around for 102 years and how, on the first voyage, nearly all the passengers and crew died from a serial killer. They called him the Tide Reaper. Very cool, honey.
+Theorist: No, no, no. He wasn’t a serial killer. He was fate. He was judgment. He was executioner. No mere man could do the things he’s done. No, he’s what we shove deep down into our memories. The memories we chose to forget. And he’s right behind you…
+John: What?
+Angelica: Hey, honey. What took you so long? I saved you some food, but it probably got stale by now.
+Theorist: You’re not safe here. This thing, this being, he’s coming for you and your Angelica. And once he gets you, we are all dead.
+John: Who is coming for us? How do you know this man? I don’t take threats so lightly, so you better be careful who you are threatening.
+Angelica: Don’t listen to him, John. I think I saw him take a hit of ketamine in the bathroom. Just leave this man alone.
+Theorist: John, don’t make the same mistake they did. Don’t forget your pain.
+<<jump EndChapter>>
+===
+
+title: Choice1B
+---
+Theorist: You shouldn’t be here. Not like this. Not now.
+John: Excuse me?
+Theorist: Leave. Take your Angelica and leave this ship. The longer you stay, the more it feeds, and once it’s full…
+John: How do you know about my Angelica? Did you do something to her…
+Angelica: Hey, honey. Are you okay? This man has been bothering all the guests. Just leave him alone. I think he’s on crack or something.
+Theorist: Please. Don’t allow it to win. Not again. He won’t leave until you remember…
+<<jump EndChapter>>
+===
+
+title: Choice1C
+---
+Child: My mom did tell me not to talk to strangers. But she didn’t say I couldn’t talk to a dead man. How long has it been following you?
+John: What did you just say? 
+Child: Oh, sorry. I can’t talk to strangers.
+<<jump TheoristEncounter>>
+===
+
+title: Choice2
+---
+Angelica: Hey, honey. I’m glad you finally made it. I don’t know what your problem is with our cruise. You’ve needed this break for a while. Especially after… I’m just glad we’re finally here.
+
+-> You’re right. I should just enjoy this cruise and not think too much. I have been having a great time with you here, sweetie.
+    <<jump Choice2A>>
+-> Yea, okay.
+    <<jump Choice2B>>
+-> Mannnn, shut the hell up. You know I didn’t wanna be here. We could do the same stuff at home.
+    <<jump Choice2C>>
+===
+
+title: Choice2A
+---
+Angelica: Aww, you’re so sweet, honey. I’m glad you finally got around to liking this trip. Trust me, by the end of this trip, you’ll be a changed man. Now let’s go get some food.
+John: Yes, my love.
+<<jump TheoristEncounter>>
+===
+
+title: Choice2B
+---
+Angelica: John, trust me. This trip will be worth it. Lose the attitude before you make this a worse trip.
+John: Okay, let’s just go get food. I’m starving.
+<<jump TheoristEncounter>>
+===
+
+title: Choice2C
+---
+Angelica: You really want to make this an even worse trip. Don’t make me cause a scene in front of these people.
+John: Pipe down, girl.
+<<wait 3>>
+Angelica: Excuse me???
+<<jump TheoristEncounter>>
+===
+
+title: TheoristEncounter
+---
+Theorist: Why is it that those in pain seem to bring everyone they love down with them?
+John: Look, man, I am in no mood for another weirdo to harass me.
+Theorist: John, I fear it’s already too late. With the little time you have, leave this ship.
+John: How do you know my name? Listen, man, I’m in no mood for any side conversations or whatever you think you’re doing. Just leave me alone.
+Theorist: Oh God, it’s worse than I thought. He’s too close to you… John, why did you leave him in the cave?
+John: Why would you...
+Angelica: John, I found a table for us to sit at. Let’s just leave this psycho alone.
+Theorist: You can leave me, but you can never leave him.
+<<jump EndChapter>>
+===
+
 title: EndChapter
-<<stop>>
+---
+<<jump stop>>
 ===

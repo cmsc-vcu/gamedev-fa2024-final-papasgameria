@@ -1,5 +1,6 @@
 title: Chapter2
 ---
+<<Fade black 1.0 0.0 2.0>>
 <i>You know the breakfast isn't too bad. Anything is better than my time in the cave. Even after the fame and money from my book about my time in the cave, I still never get used to good food. My taste buds have never been the same. Not after what I had to do to survive. I do appreciate my wife trying to distract me and help me relax for once after my book tour, but it never feels like I am really relaxing; the memories never go away unless I keep myself busy. Maybe it's best if my wife and I go… </i>
 -> Go explore more of the ship
     <<jump CH2Choice1>>
