@@ -2,10 +2,10 @@ title: Chapter1
 position: -94,-831
 ---
 <<Scene bg_note>>
-<<Fade black 1.0 0.0 10>>
-<<wait 10>>
-<<Fade black 0.0 1.0 10>>
-<<wait 10>>
+<<Fade black 1.0 0.0 5>>
+<<wait 5>>
+<<Fade black 0.0 1.0 5>>
+<<wait 5>>
 <<Fade black 1.0 0.0 3>>
 <<Scene bg_room>>
 <<Act John John-Neutral right 0.5 green>>
@@ -196,7 +196,7 @@ position: 230,-672
 <<Act John John-Neutral 0 center green>>
 <<Flip John>>
 <<Move John 0.25 center 1.5>>
-<<Act Angelica Angelica-Neutral 1.25 center pink>>
+<<Act Angelica Angelica-Neutral 1.25 center>>
 <<wait 3>>
 Angelica: Hey, honey. I’m glad you finally made it. You’ve needed this break for a while. Especially after… I’m just glad we’re finally here. Let's just try and enjoy our time here. 
 -> You’re right. I should just enjoy th is cruise and not think too much. I have been having a great time with you here, sweetie.
@@ -296,6 +296,5 @@ Theorist: You can leave me, but you can never leave him.
 title: EndChapter
 position: -318,146
 ---
-<<HideAll>>
 <<stop>>
 ===

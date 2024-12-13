@@ -219,9 +219,9 @@ Angelica: No honey you're just hearing things, don't let these crazy people give
 John: I'm tired of lying to myself. Of forgetting the past, hoping the memories would just go away. I killed my best friend and Angelica is a cheater. Whatever deal you made with this entity to kill me to bring Arthur back, I deserve it. He was a good man and he didn't deserve death. Do what is needed. I am a fraud.
 Angelica: I don't know what you are talking about. Ok sure I saw this creature but sacrificing you to bring back Arthur, that's crazy. John just think about it, do you really think I would hurt you babe?
 John: Honey I don't think I can ever forgive you. We are done. I can't keep lying to myself and act like everything is fine. I deserve to remember, to come clean.
-Angelica: No! You can't remember, you have to forget. You have to. It needs your pain John. It wasn't supposed to be this way!!!
+Angelica: No! You can't remember, you have to forget. You have to. It needs your pain, John. It wasn't supposed to be this way!!!
 <i>Times up</i>
-*Angelica explodes.*
+<<ChangeActorSprite Angelica Angelica-Dead>>
     <<jump Epilogue>>
 ===
 
@@ -258,8 +258,18 @@ John: You don't think I think about that everyday. How much regret I have for ki
 Angelica: For me? Oh John if you ever cared about me you would have spared Arthur's life. But that's in the past. It is ready for me. Ready to keep its end of the bargain, if I do mine.
     <<ChangeActorSprite  John John-Nervous>>
 John: Do wha ...
+    <<Shake Angelica 0.1>>
+    <<ChangeActorSprite John John-Stabbed>>
 Angy: Shusssh, enjoy your last breath, look at the pool. Don't worry, your pain will go away. It will just be me and Arthur again.
-    <<jump EndChapter>>
+    <<jump EndChapter3>>
+===
+
+title: EndChapter3
+---
+    <<Fade  black 0 1 3>>
+    <<wait 3>>
+    YOU DIED.
+    <<stop>> 
 ===
 
 title: Epilogue
@@ -267,7 +277,10 @@ title: Epilogue
     <<Fade black 1 0 3 >>
     <<Scene bg_room>>
     <<Act John John-Neutral 0.75 center>>
-<i>Seeing Angelica explode in front of me because she failed to sacrifice me to a demon that promised to bring back my dead best friend wasn't on my bingo card for this trip. But you live and you learn I guess.</i>
+<i>Seeing Angelica die in front of me because she failed to sacrifice me to a demon that promised to bring back my dead best friend wasn't on my bingo card for this trip. But you live and you learn I guess.</i>
 <i>Whatever happens, happens. I'll have to just accept it. No more forgetting, no more lies. So when I leave this godforsaken ship I'm coming clean. Might lose some sponsors, money, friends but it's much better than hiding, than letting my past control me. Good riddance.</i>
 <i>You know what, maybe I should write a second book.</i>
+    <<Fade black 0 1 3>>
+    <<wait 3>>
+    <<stop>>
 ===
