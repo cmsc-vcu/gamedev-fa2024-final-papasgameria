@@ -1,18 +1,43 @@
 title: Chapter1
 ---
-<<Scene NightPool>>
-// Pick up note and read out loud
-John: "Honey, I went to go get breakfast. Meet me in the dining room."
-<i> I love her to death, but sometimes she can be a pain in the ass. I was perfectly fine watching Bodyguard and drinking my 6-pack. We can bond over sitting on my damn couch not going on a $25,000 cruise. But the SS Neptune isn't too bad. Has some decent food and sturdy floors. There are some weird characters here, I don’t know about staying another 2 days here. I better get going, the Misses is waiting… or let me see what else the ship has to offer.</i>
--> Explore ship then meet Angelica later
+<<Fade black 1.0 0.0 10>>
+<<Scene bg_note>>
+<<wait 5>>
+<<Fade black 0.0 1.0 10>>
+<<wait 10>>
+<<Fade black 1.0 0.0 3>>
+<<Scene bg_room>>
+<<Act John John-Neutral right center green>>
+
+<<wait 5>>
+John: Looks like she wants to meet in the dining room. I could go for some food too...
+<i>Angelica... I love her to death, but sometimes she can be a pain in the ass. I was perfectly fine watching Bodyguard and drinking my 6-pack. We can bond over sitting on my damn couch not going on a $25,000 cruise. But the SS Neptune isn't too bad. Has some decent food and sturdy floors. There are some weird characters here, I don’t know about staying another 2 days here. I better get going, the missus is waiting… or let me see what else the ship has to offer.</i>
+-> Explore the ship
     <<jump Choice1>>
--> Go straight to your Angelica
+-> Go find Angelica
+    <<Flip John>>
+    <<Move John 2 center 3.5>>
+    <<Fade black 0.0 1.0 3>>
+    <<wait 3>>
+    <<Hide John>>
     <<jump Choice2>>
 ===
 
 title: Choice1
 ---
 John: Let me check out the ship first. She can wait for a bit.
+<<Flip John>>
+<<Move John 2 center 3.5>>
+<<Fade black 0.0 1.0 3>>
+<<wait  3>>
+<<Hide John>>
+<<Fade  black 1.0 0.0 3>>
+<<Scene bg_hallway>>
+<<wait  3>>
+<<Act John John-Neutral 0 center green>>
+<<Flip John>>
+<<Move John 0.25 center 2.5>>
+<<Act John John-Neutral left center green>>
 Child: Hey mister, could you help me find my mom? She told me to wait here, but it’s been an hour.
 -> Sure kid, why don't you follow me to the dining room. She might be there getting you food.
     <<jump Choice1A>>
@@ -32,7 +57,8 @@ Child: Mom, who is this guy?
 Mother: Oh, I was just talking to this nice gentleman. He was telling me this ship has been around for 102 years and how, on the first voyage, nearly all the passengers and crew died from a serial killer. They called him the Tide Reaper. Very cool, honey.
 Theorist: No, no, no. He wasn’t a serial killer. He was fate. He was judgment. He was executioner. No mere man could do the things he’s done. No, he’s what we shove deep down into our memories. The memories we chose to forget. And he’s right behind you…
 John: What?
-Angelica: Hey, honey. What took you so long? I saved you some food, but it probably got stale by now.
+// Enter angelica
+Angelica: Hey, honey. Where have you been? I saved you some food, but it probably got stale by now.
 Theorist: You’re not safe here. This thing, this being, he’s coming for you and your Angelica. And once he gets you, we are all dead.
 John: Who is coming for us? How do you know this man? I don’t take threats so lightly, so you better be careful who you are threatening.
 Angelica: Don’t listen to him, John. I think I saw him take a hit of ketamine in the bathroom. Just leave this man alone.
@@ -61,20 +87,37 @@ Child: Oh, sorry. I can’t talk to strangers.
 
 title: Choice2
 ---
-Angelica: Hey, honey. I’m glad you finally made it. I don’t know what your problem is with our cruise. You’ve needed this break for a while. Especially after… I’m just glad we’re finally here.
-
+<<Fade black 1.0 0.0 2.0>>
+<<Scene bg_daypool>>
+<<Act John John-Neutral 0 center green>>
+<<Flip John>>
+<<Move John 0.25 center 2.5>>
+<<Act Angelica Angelica-Neutral 1.25 center pink>>
+<<wait 3>>
+Angelica: Hey, honey. I’m glad you finally made it. You’ve needed this break for a while. Especially after… I’m just glad we’re finally here. Let's just try and enjoy our time here. 
 -> You’re right. I should just enjoy this cruise and not think too much. I have been having a great time with you here, sweetie.
+    <<ChangeActorSprite Angelica Angelica-Happy>>
     <<jump Choice2A>>
 -> Yea, okay.
+    <<ChangeActorSprite Angelica Angelica-Annoyed>>
     <<jump Choice2B>>
--> Mannnn, shut the hell up. You know I didn’t wanna be here. We could do the same stuff at home.
+-> Just shut the hell up. You know I didn’t wanna be here. We could literally be doing the same stuff at home.
+    <<ChangeActorSprite Angelica Angelica-Annoyed>>
     <<jump Choice2C>>
 ===
 
 title: Choice2A
 ---
 Angelica: Aww, you’re so sweet, honey. I’m glad you finally got around to liking this trip. Trust me, by the end of this trip, you’ll be a changed man. Now let’s go get some food.
+<<ChangeActorSprite John John-Happy>>
 John: Yes, my love.
+Angelica: I'm going to go find a table.
+<<Flip Angelica>>
+<<Move Angelica 2 center 1.5>>
+<<wait 1.5>>
+<<Hide Angelica>>
+<<Move John 1.25 center 3>>
+<<wait 3>>
 <<jump TheoristEncounter>>
 ===
 
@@ -82,26 +125,49 @@ title: Choice2B
 ---
 Angelica: John, trust me. This trip will be worth it. Lose the attitude before you make this a worse trip.
 John: Okay, let’s just go get food. I’m starving.
+<<ChangeActorSprite Angelica Angelica-Neutral>>
+Angelica: I'm going to go find a table. 
+<<Flip Angelica>>
+<<Move Angelica 2 center 1.5>>
+<<wait 1.5>>
+<<Hide Angelica>>
+<<Move John 1.25 center 3>>
+<<wait 3>>
 <<jump TheoristEncounter>>
 ===
 
 title: Choice2C
 ---
-Angelica: You really want to make this an even worse trip. Don’t make me cause a scene in front of these people.
-John: Pipe down, girl.
+Angelica: You really want to make this an even worse trip. Don’t cause a scene in front of these people.
+John: Pipe down, woman.
 <<wait 3>>
+<<ChangeActorSprite Angelica Angelica-Angry>>
 Angelica: Excuse me???
+Angelica: I'm going to go find a table. Do whatever you want.
+<<Flip Angelica>>
+<<Move Angelica 2 center 1.5>>
+<<wait 1.5>>
+<<Hide Angelica>>
+<<Move John 1.25 center 3>>
+<<wait 3>>
+
 <<jump TheoristEncounter>>
 ===
 
 title: TheoristEncounter
 ---
 Theorist: Why is it that those in pain seem to bring everyone they love down with them?
+<<Act Theorist Theorist-Neutral left center black>>
+<<Flip John>>
+<<wait  2>>
+John: You talking to me? 
+Theorist: You will find out soon enough.
 John: Look, man, I am in no mood for another weirdo to harass me.
 Theorist: John, I fear it’s already too late. With the little time you have, leave this ship.
 John: How do you know my name? Listen, man, I’m in no mood for any side conversations or whatever you think you’re doing. Just leave me alone.
 Theorist: Oh God, it’s worse than I thought. He’s too close to you… John, why did you leave him in the cave?
 John: Why would you...
+<<ChangeActorSprite Angelica Angelica-Annoyed>>
 Angelica: John, I found a table for us to sit at. Let’s just leave this psycho alone.
 Theorist: You can leave me, but you can never leave him.
 <<jump EndChapter>>
@@ -109,5 +175,6 @@ Theorist: You can leave me, but you can never leave him.
 
 title: EndChapter
 ---
+<<Fade black 0.0 1.0 2>>
 <<jump stop>>
 ===

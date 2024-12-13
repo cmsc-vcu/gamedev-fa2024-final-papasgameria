@@ -53,6 +53,7 @@ namespace Yarn.Unity.Example {
 			runner.AddCommandHandler<string>("Scene", DoSceneChange );
 			runner.AddCommandHandler<string,string,string,string,string>("Act", SetActor );
 			runner.AddCommandHandler<string,string,string>("Draw", SetSpriteYarn );
+			runner.AddCommandHandler<string, string>("ChangeActorSprite", ChangeActorSprite);
 
 			runner.AddCommandHandler<string>("Hide", HideSprite );
 			runner.AddCommandHandler("HideAll", HideAllSprites );
@@ -129,6 +130,29 @@ namespace Yarn.Unity.Example {
 
 			// save actor data
 			actors.Add( actorName, new VNActor( newActor, actorColor) );
+		}
+
+		/// Changes the sprite of an existing actor to show a different facial expression
+		/// Usage: ChangeActorSprite(actorName, newSpriteName)
+		public void ChangeActorSprite(string actorName, string newSpriteName)
+		{
+			if (actors.ContainsKey(actorName))
+			{
+				Sprite newSprite = FetchAsset<Sprite>(newSpriteName);
+				if (newSprite != null)
+				{
+					actors[actorName].actorImage.sprite = newSprite;
+					actors[actorName].actorImage.SetNativeSize();
+				}
+				else
+				{
+					Debug.LogErrorFormat(this, "VN Manager couldn't find sprite [{0}] for actor [{1}]", newSpriteName, actorName);
+				}
+			}
+			else
+			{
+				Debug.LogErrorFormat(this, "VN Manager couldn't find actor [{0}] to change sprite", actorName);
+			}
 		}
 
 		///<summary> Draw(spriteName,positionX,positionY) generic function
