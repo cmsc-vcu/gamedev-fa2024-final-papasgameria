@@ -22,7 +22,7 @@ The player navigates John’s interactions with other characters, including his 
 
 - GITHUB URL: < [GITHUB](https://github.com/cmsc-vcu/gamedev-fa2024-final-papasgameria/tree/main) >
 - Google Drive of Files < [Google Drive](https://drive.google.com/drive/folders/18gZstaUBFr4F1W5EDd_tjAz3YEYb6V3f) >
-- webGL URL: < [webGL Link]((https://play.unity.com/en/games/989f3341-e0df-432a-ad69-ca59a43e3a93/sealed)) >
+- webGL URL: < [webGL Link](https://play.unity.com/en/games/989f3341-e0df-432a-ad69-ca59a43e3a93/sealed) >
 - Itch.io URL: < [Itch.io](https://kriishpatell.itch.io/sealed) >
 
 ## Files in the repository
