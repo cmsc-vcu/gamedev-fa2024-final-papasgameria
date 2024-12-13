@@ -149,7 +149,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 84c41a69d288a674bba50fd0ac48581c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0e7ffff0635798b4d9b1878e739ddc37, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
@@ -356,10 +356,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runner: {fileID: 2142390633}
   loadSprites:
-  - {fileID: 21300000, guid: b0938621cf0cf1f43bc5e14650b4f582, type: 3}
   - {fileID: 21300000, guid: 98304e3793c1a844bb81f303a39fbe9f, type: 3}
   - {fileID: 21300000, guid: 5266b847e854f994781698ead4314e75, type: 3}
-  - {fileID: 21300000, guid: 5de3832cbce64bf4187cc9b5a8e73b49, type: 3}
   - {fileID: 21300000, guid: 277ef0cf74c227a4589718fe1c904e3a, type: 3}
   - {fileID: 21300000, guid: 07a31d85ba6b7bd4f91c32d15ab69717, type: 3}
   - {fileID: 21300000, guid: a84e66be3ab33d44e99713d81737fd75, type: 3}
@@ -368,16 +366,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 0b104f535f7fcac4abf2774962e326cb, type: 3}
   - {fileID: 21300000, guid: b32ef20030ccf5149bc701beff8d4119, type: 3}
   - {fileID: 21300000, guid: 09c9e3b20155edf41af49d3fdfbd60a0, type: 3}
-  - {fileID: 21300000, guid: 8e40c815387c8824b9804eba23f9b411, type: 3}
-  - {fileID: 21300000, guid: cfb5dfd85761f7e448856ebdcd395f9c, type: 3}
-  - {fileID: 21300000, guid: b19d89be4cf74b7499cf647ab2719648, type: 3}
-  - {fileID: 21300000, guid: c77b5cb4d132aa24c83a304e761b6070, type: 3}
-  - {fileID: 21300000, guid: 8c774a20b3f59334fa740d5523d144d7, type: 3}
-  - {fileID: 21300000, guid: 7469890ba1743eb40a04cc76e9f4b4b7, type: 3}
   - {fileID: 21300000, guid: cecba58e533495b44b6b54caa74976ff, type: 3}
   - {fileID: 21300000, guid: 37070a18f53647a4c8808ee7c1e6c0c4, type: 3}
   - {fileID: 21300000, guid: 71c579bb46bec36489a48c39c829b0aa, type: 3}
-  - {fileID: 21300000, guid: 88dcefe7c6186d84d85aa44be8f49a7f, type: 3}
   loadAudio: []
   useResourcesFolders: 0
   defaultTint: {r: 0, g: 0, b: 0, a: 0}
@@ -873,7 +864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
       propertyPath: startNode
-      value: Chapter1
+      value: Chapter2
       objectReference: {fileID: 0}
     - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
       propertyPath: yarnProject

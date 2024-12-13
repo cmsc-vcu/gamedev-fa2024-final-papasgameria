@@ -1,18 +1,18 @@
 title: Chapter1
 position: -94,-831
 ---
-// <<Scene bg_note>>
-// <<Fade black 1.0 0.0 10>>
-// <<wait 10>>
-// <<Fade black 0.0 1.0 10>>
-// <<wait 10>>
-// <<Fade black 1.0 0.0 3>>
+<<Scene bg_note>>
+<<Fade black 1.0 0.0 10>>
+<<wait 10>>
+<<Fade black 0.0 1.0 10>>
+<<wait 10>>
+<<Fade black 1.0 0.0 3>>
 <<Scene bg_room>>
 <<Act John John-Neutral right 0.5 green>>
 
-// <<wait 5>>
-// John: Looks like she wants to meet in the dining room. I could go for some food too...
-// <i>Angelica... I love her to death, but sometimes she can be a pain in the ass. I was perfectly fine watching Bodyguard and drinking my 6-pack. We can bond over sitting on my damn couch not going on a $25,000 cruise. But the SS Neptune isn't too bad. Has some decent food and sturdy floors. There are some weird characters here, I don’t know about staying another 2 days here. I better get going, the missus is waiting… or let me see what else the ship has to offer.</i>
+<<wait 5>>
+John: Looks like she wants to meet in the dining room. I could go for some food too...
+<i>Angelica... I love her to death, but sometimes she can be a pain in the ass. I was perfectly fine watching Bodyguard and drinking my 6-pack. We can bond over sitting on my damn couch not going on a $25,000 cruise. But the SS Neptune isn't too bad. Has some decent food and sturdy floors. There are some weird characters here, I don’t know about staying another 2 days here. I better get going, the missus is waiting… or let me see what else the ship has to offer.</i>
 -> Explore the ship
     <<jump Choice1>>
 -> Go find Angelica
@@ -202,7 +202,7 @@ Angelica: Hey, honey. I’m glad you finally made it. You’ve needed this break
 -> You’re right. I should just enjoy this cruise and not think too much. I have been having a great time with you here, sweetie.
     <<ChangeActorSprite Angelica Angelica-Happy>>
     <<jump Choice2A>>
--> Yea, okay.
+-> Yeah, okay.
     <<ChangeActorSprite Angelica Angelica-Annoyed>>
     <<jump Choice2B>>
 -> Just shut the hell up. You know I didn’t wanna be here. We could literally be doing the same stuff at home.
