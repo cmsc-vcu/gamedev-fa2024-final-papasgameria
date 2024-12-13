@@ -13,8 +13,9 @@ This repo contains our work on the four-person game development projects for Gam
 
 ## Game Description
 
-Provide more details of the game.  Discuss any unique game play features.  Why is
-this game different from others?  What is the goal for playing?
+The game is a psychological thriller visual novel set aboard a mysterious, eerie cruise ship. The player, John Bennet, is a man grappling with past trauma stemming from a horrific cave survival incident that led to fame and fortune through a best-selling book. The narrative focuses on themes of guilt, deception, and the psychological toll of unresolved trauma, interwoven with supernatural elements.
+
+The player navigates John’s interactions with other characters, including his wife Angelica, mysterious passengers, and an ominous figure referred to as "The Entity," while uncovering dark secrets about John's past and the sinister nature of the ship itself.
 
 ## Important Links
 
