@@ -10,6 +10,7 @@ This repo contains our work on the four-person game development projects for Gam
 - Nadeem Abdulmelik (abdulmelikna@vcu.edu)
 - Shikriti Ghosh (ghoshs2@vcu.edu)
 - Zach Berry (berryz2@vcu.edu)
+- Claudia Andrade
 
 ## Game Description
 
