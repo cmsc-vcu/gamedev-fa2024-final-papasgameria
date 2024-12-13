@@ -40,7 +40,7 @@ John: Let me check out the ship first. She can wait for a bit.
 <<wait 3>>
 
 Child: Hey mister, could you help me find my mom? She told me to wait here, but it’s been an hour.
--> Sure kid, why don't you follow me to the dining room. She might be there getting you food.
+-> Sure kid, let's go look for her in the dining room. She might be there getting you food.
     <<ChangeActorSprite Child Child-Happy>>
     <<jump Choice1A>>
 -> Ignore the kid and walk away
@@ -50,7 +50,7 @@ Child: Hey mister, could you help me find my mom? She told me to wait here, but 
     <<Hide John>>
     <<Hide Child>>
     <<jump Choice1B>>
--> Shut up, kid. Don’t you know how to not talk to strangers?
+-> Shut up, kid. Don’t you know not to talk to strangers?
     <<ChangeActorSprite Child Child-Crying>>
     <<jump Choice1C>>
 ===
@@ -98,22 +98,24 @@ Mother: Anyways we ought to get going. Nice chatting with you all.
 <<Flip Child>>
 <<Move Mother 2 center 3.5>>
 <<Move Child 2.25 center 3.5>>
+<<wait 3>>
 <<Hide Mother>>
 <<Hide Child>>
-<<wait 4>>
+<<wait 2>>
 <<Act Angelica Angelica-Neutral 2 center>>
 <<Move Angelica 1.25 center 2.5>>
 <<wait 2>>
 Angelica: Hey, honey. Where have you been? I saved you some food, but it probably got stale by now.
 Theorist: You’re not safe here. This thing, this being, he’s coming for you and your Angelica. And once he gets you, we are all dead.
 <<ChangeActorSprite John John-Angry>>
-John: Who is coming for us? How do you know this man? I don’t take threats so lightly, so you better be careful who you are threatening.
+John: Who is coming for us? How do you know this man? I don’t take threats lightly, so you better be careful who you mess with.
 Angelica: Don’t listen to him, John. I think I saw him take a hit of ketamine in the bathroom. Just leave this man alone.
 <<Move John 1 center 2.5>>
 <<wait 1>>
 <<Move Theorist 0.25 center 2.5>>
-<<wait 2.5>>
+<<wait 1.5>>
 <<Flip John>>
+<<wait 1>>
 <<Flip Theorist>>
 Theorist: John, don’t make the same mistake they did. Don’t forget your pain.
 <<Flip Theorist>>
@@ -123,6 +125,8 @@ Theorist: John, don’t make the same mistake they did. Don’t forget your pain
 <<Flip Angelica>>
 <<Move John 2 center 3.5>>
 <<Move Angelica 2.25 center 3.5>>
+<<Fade black 0.0 1.0 3>>
+<<wait 4>>
 <<jump EndChapter>>
 ===
 
@@ -154,28 +158,35 @@ Theorist: Please. Don’t allow it to win. Not again. He won’t leave until you
 <<Flip John>>
 <<Move John -1.25 center 3.5>>
 <<Move Angelica -1 center 3.5>>
+<<Fade black 0.0 1.0 3>>
 <<wait 4>>
 <<jump EndChapter>>
 ===
 
 title: Choice1C
 ---
-Child: My mom did tell me not to talk to strangers. But she didn’t say I couldn’t talk to a dead man. How long has it been following you?
+<<ChangeActorSprite Child Child-Scary>>
+Child: I was told not to talk to strangers. But she didn’t say I couldn’t talk to a dead man. How long has it been following you?
 <<ChangeActorSprite John John-Nervous>>
 John: What did you just say? 
+<<ChangeActorSprite Child Child-Crying>>
 Child: Oh, sorry. I can’t talk to strangers.
 <<Flip Child>>
 <<Move Child 2.5 center 2>>
 <<Fade black 0 1.0 2>>
 <<wait 2>>
-<<Move John 0.75 center 2>>
+<<Move John 0.75 center 0>>
+<<ChangeActorSprite John John-Neutral>>
+<<Scene bg_diningroom>>
+<<wait 2>>
+<<Fade black 1.0 0.0 2>>
 <<jump TheoristEncounter>>
 ===
 
 title: Choice2
 ---
 <<Fade black 1.0 0.0 2.0>>
-<<Scene bg_daypool>>
+<<Scene bg_diningroom>>
 <<Act John John-Neutral 0 center green>>
 <<Flip John>>
 <<Move John 0.25 center 1.5>>
@@ -244,6 +255,7 @@ Angelica: I'm going to go find a table. Do whatever you want.
 
 title: TheoristEncounter
 ---
+<<Act Angelica Angelica-Neutral 2 center>>
 Theorist: Why is it that those in pain seem to bring everyone they love down with them?
 <<Act Theorist Theorist-Neutral -1 center black>>
 <<Flip Theorist>>
@@ -252,6 +264,7 @@ Theorist: Why is it that those in pain seem to bring everyone they love down wit
 <<wait 4>>
 John: You talking to me? 
 Theorist: You will find out soon enough.
+<<ChangeActorSprite John John-Angry>>
 John: Look, man, I am in no mood for another weirdo to harass me.
 Theorist: John, I fear it’s already too late. With the little time you have, leave this ship.
 John: How do you know my name? Listen, man, I’m in no mood for any side conversations or whatever you think you’re doing. Just leave me alone.
@@ -260,16 +273,17 @@ John: Why would you...
 <<Move Angelica 1.25 center 1.5>>
 Angelica: John, I found a table for us to sit at. Let’s just leave this psycho alone.
 <<Flip John>>
+<<ChangeActorSprite John John-Happy>>
 Theorist: You can leave me, but you can never leave him.
 <<Flip Angelica>>
 <<Move John 2 center 3.5>>
 <<Move Angelica 2.25 center 3.5>>
+<<Fade black 0.0 1.0 3>>
 <<wait 3>>
 <<jump EndChapter>>
 ===
 
 title: EndChapter
 ---
-<<Fade black 0.0 1.0 3>>
 <<HideAll>>
 ===
