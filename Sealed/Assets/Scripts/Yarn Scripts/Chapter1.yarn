@@ -109,7 +109,7 @@ Mother: Anyways we ought to get going. Nice chatting with you all.
 <<Move Angelica 1.25 center 2.5>>
 <<wait 2>>
 Angelica: Hey, honey. Where have you been? I saved you some food, but it probably got stale by now.
-Theorist: You’re not safe here. This thing, this being, he’s coming for you and your Angelica. And once he gets you, we are all dead.
+Theorist: You’re not safe here. This thing, this being, he’s coming for you and your wife. And once he gets you, we are all dead.
 <<ChangeActorSprite John John-Angry>>
 John: Who is coming for us? How do you know this man? I don’t take threats lightly, so you better be careful who you mess with.
 Angelica: Don’t listen to him, John. I think I saw him take a hit of ketamine in the bathroom. Just leave this man alone.
@@ -149,7 +149,7 @@ position: -394,-414
 Theorist: You shouldn’t be here. Not like this. Not now.
 <<ChangeActorSprite John John-Angry>>
 John: Excuse me?
-Theorist: Leave. Take your Angelica and leave this ship. The longer you stay, the more it feeds, and once it’s full…
+Theorist: Leave. Take your wife and leave this ship. The longer you stay, the more it feeds, and once it’s full…
 John: How do you know about Angelica? Did you do something to her??
 <<Act Angelica Angelica-Neutral 2 center>>
 <<Move Angelica 0.75 center 2.5>>

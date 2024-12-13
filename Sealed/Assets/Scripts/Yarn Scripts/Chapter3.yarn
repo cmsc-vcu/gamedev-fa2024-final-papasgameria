@@ -191,6 +191,13 @@ title: ConfrontAngelica
 <<Act  John John-Nervous -1 center>>
 <<Flip John>>
 <<Act  Angelica Angelica-Annoyed 0.75 center>>
+<<Flip Angelica>>
+<<wait  1>>
+<<Flip Angelica>>
+<<wait  2>>
+<<Flip Angelica>>
+<<wait  0.5>>
+<<Flip Angelica>>
 <<wait  3>>
 <<Move  John 0.25 center 2.5>>
 John: Honey, we have to talk.
@@ -222,6 +229,7 @@ John: Honey I don't think I can ever forgive you. We are done. I can't keep lyin
 Angelica: No! You can't remember, you have to forget. You have to. It needs your pain, John. It wasn't supposed to be this way!!!
 <i>Times up</i>
 <<ChangeActorSprite Angelica Angelica-Dead>>
+<<wait 5>>
     <<jump Epilogue>>
 ===
 
@@ -260,7 +268,7 @@ Angelica: For me? Oh John if you ever cared about me you would have spared Arthu
 John: Do wha ...
     <<Shake Angelica 0.1>>
     <<ChangeActorSprite John John-Stabbed>>
-Angy: Shusssh, enjoy your last breath, look at the pool. Don't worry, your pain will go away. It will just be me and Arthur again.
+Angelica: Shusssh, enjoy your last breath, look at the pool. Don't worry, your pain will go away. It will just be me and Arthur again.
     <<jump EndChapter3>>
 ===
 
@@ -274,6 +282,10 @@ title: EndChapter3
 
 title: Epilogue
 ---
+    <<Fade black 0 1 3>>
+    <<wait  3>>
+    <<Hide Angelica>>
+    <<wait  3>>
     <<Fade black 1 0 3 >>
     <<Scene bg_room>>
     <<Act John John-Neutral 0.75 center>>
