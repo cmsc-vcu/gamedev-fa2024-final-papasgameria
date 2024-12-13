@@ -1,4 +1,5 @@
 title: Chapter1
+position: -94,-831
 ---
 // <<Scene bg_note>>
 // <<Fade black 1.0 0.0 10>>
@@ -24,6 +25,7 @@ title: Chapter1
 ===
 
 title: Choice1
+position: -394,-643
 ---
 John: Let me check out the ship first. She can wait for a bit.
 <<Flip John>>
@@ -56,6 +58,7 @@ Child: Hey mister, could you help me find my mom? She told me to wait here, but 
 ===
 
 title: Choice1A
+position: -626,-410
 ---
 Child: Okay sir...
 <<Fade black 0.0 1.0 3>>
@@ -131,6 +134,7 @@ Theorist: John, don’t make the same mistake they did. Don’t forget your pain
 ===
 
 title: Choice1B
+position: -394,-414
 ---
 <<Act Theorist Theorist-Neutral 1.25 center>>
 <<Flip Theorist>>
@@ -164,6 +168,7 @@ Theorist: Please. Don’t allow it to win. Not again. He won’t leave until you
 ===
 
 title: Choice1C
+position: -165,-418
 ---
 <<ChangeActorSprite Child Child-Scary>>
 Child: I was told not to talk to strangers. But she didn’t say I couldn’t talk to a dead man. How long has it been following you?
@@ -184,6 +189,7 @@ Child: Oh, sorry. I can’t talk to strangers.
 ===
 
 title: Choice2
+position: 230,-672
 ---
 <<Fade black 1.0 0.0 2.0>>
 <<Scene bg_diningroom>>
@@ -205,8 +211,9 @@ Angelica: Hey, honey. I’m glad you finally made it. You’ve needed this break
 ===
 
 title: Choice2A
+position: 151,-430
 ---
-Angelica: Aww, you’re so sweet, honey. I’m glad you finally got around to liking this trip. Trust me, by the end of this trip, you’ll be a changed man. Now let’s go get some food.
+Angelica: Aww, you’re so sweet, honey. I’m glad you finally got around to liking this trip. Trust me, by the end of this, you’ll be a changed man. Now let’s go get some food.
 <<ChangeActorSprite John John-Happy>>
 John: Yes, my love.
 Angelica: I'm going to go find a table.
@@ -220,8 +227,9 @@ Angelica: I'm going to go find a table.
 ===
 
 title: Choice2B
+position: 381,-421
 ---
-Angelica: John, trust me. This trip will be worth it. Lose the attitude before you make this a worse trip.
+Angelica: John, trust me. This trip will be worth it. Lose the attitude before you make this worse.
 John: Okay, let’s just go get food. I’m starving.
 <<ChangeActorSprite Angelica Angelica-Neutral>>
 Angelica: I'm going to go find a table. 
@@ -235,6 +243,7 @@ Angelica: I'm going to go find a table.
 ===
 
 title: Choice2C
+position: 612,-424
 ---
 Angelica: You really want to make this an even worse trip. Don’t cause a scene in front of these people.
 John: Pipe down, woman.
@@ -254,6 +263,7 @@ Angelica: I'm going to go find a table. Do whatever you want.
 ===
 
 title: TheoristEncounter
+position: -226,266
 ---
 <<Act Angelica Angelica-Neutral 2 center>>
 Theorist: Why is it that those in pain seem to bring everyone they love down with them?
@@ -284,6 +294,7 @@ Theorist: You can leave me, but you can never leave him.
 ===
 
 title: EndChapter
+position: -318,146
 ---
 <<HideAll>>
 ===
