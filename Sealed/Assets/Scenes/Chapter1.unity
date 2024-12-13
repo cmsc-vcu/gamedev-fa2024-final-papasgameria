@@ -1109,6 +1109,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runner: {fileID: 1083648970}
   loadSprites:
+  - {fileID: 21300000, guid: b0938621cf0cf1f43bc5e14650b4f582, type: 3}
+  - {fileID: 21300000, guid: 98304e3793c1a844bb81f303a39fbe9f, type: 3}
+  - {fileID: 21300000, guid: d0709b4154c579640bd179a3bea67ece, type: 3}
   - {fileID: 21300000, guid: 1303c4e2d42afc34fb4f8b85b4f3bd1c, type: 3}
   - {fileID: 21300000, guid: bbcb08cffbaae8d42bf07cd46ebb9788, type: 3}
   - {fileID: 21300000, guid: 0b104f535f7fcac4abf2774962e326cb, type: 3}
@@ -1117,8 +1120,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 07a31d85ba6b7bd4f91c32d15ab69717, type: 3}
   - {fileID: 21300000, guid: a84e66be3ab33d44e99713d81737fd75, type: 3}
   - {fileID: 21300000, guid: 3380e85c006ab904ebb71e2f10e12ffa, type: 3}
-  - {fileID: 21300000, guid: d0709b4154c579640bd179a3bea67ece, type: 3}
   - {fileID: 21300000, guid: 09c9e3b20155edf41af49d3fdfbd60a0, type: 3}
+  - {fileID: 21300000, guid: 8e40c815387c8824b9804eba23f9b411, type: 3}
+  - {fileID: 21300000, guid: cfb5dfd85761f7e448856ebdcd395f9c, type: 3}
+  - {fileID: 21300000, guid: b19d89be4cf74b7499cf647ab2719648, type: 3}
+  - {fileID: 21300000, guid: c77b5cb4d132aa24c83a304e761b6070, type: 3}
   loadAudio: []
   useResourcesFolders: 0
   defaultTint: {r: 0, g: 0, b: 0, a: 0}
