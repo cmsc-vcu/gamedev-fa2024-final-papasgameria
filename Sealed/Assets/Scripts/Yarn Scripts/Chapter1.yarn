@@ -1,17 +1,17 @@
 title: Chapter1
 ---
-<<Fade black 1.0 0.0 10>>
-<<Scene bg_note>>
-<<wait 5>>
-<<Fade black 0.0 1.0 10>>
-<<wait 10>>
-<<Fade black 1.0 0.0 3>>
+// <<Scene bg_note>>
+// <<Fade black 1.0 0.0 10>>
+// <<wait 10>>
+// <<Fade black 0.0 1.0 10>>
+// <<wait 10>>
+// <<Fade black 1.0 0.0 3>>
 <<Scene bg_room>>
-<<Act John John-Neutral right center green>>
+<<Act John John-Neutral right 0.5 green>>
 
-<<wait 5>>
-John: Looks like she wants to meet in the dining room. I could go for some food too...
-<i>Angelica... I love her to death, but sometimes she can be a pain in the ass. I was perfectly fine watching Bodyguard and drinking my 6-pack. We can bond over sitting on my damn couch not going on a $25,000 cruise. But the SS Neptune isn't too bad. Has some decent food and sturdy floors. There are some weird characters here, I don’t know about staying another 2 days here. I better get going, the missus is waiting… or let me see what else the ship has to offer.</i>
+// <<wait 5>>
+// John: Looks like she wants to meet in the dining room. I could go for some food too...
+// <i>Angelica... I love her to death, but sometimes she can be a pain in the ass. I was perfectly fine watching Bodyguard and drinking my 6-pack. We can bond over sitting on my damn couch not going on a $25,000 cruise. But the SS Neptune isn't too bad. Has some decent food and sturdy floors. There are some weird characters here, I don’t know about staying another 2 days here. I better get going, the missus is waiting… or let me see what else the ship has to offer.</i>
 -> Explore the ship
     <<jump Choice1>>
 -> Go find Angelica
@@ -27,61 +27,148 @@ title: Choice1
 ---
 John: Let me check out the ship first. She can wait for a bit.
 <<Flip John>>
-<<Move John 2 center 3.5>>
+<<Move John 2 center 2.5>>
 <<Fade black 0.0 1.0 3>>
-<<wait  3>>
+<<wait 3>>
 <<Hide John>>
-<<Fade  black 1.0 0.0 3>>
 <<Scene bg_hallway>>
-<<wait  3>>
+<<Act Child Child-Sad 1.25 center blue>>
+<<Fade black 1.0 0.0 3>>
 <<Act John John-Neutral 0 center green>>
 <<Flip John>>
-<<Move John 0.25 center 2.5>>
-<<Act John John-Neutral left center green>>
+<<Move John 0.25 center 1.5>>
+<<wait 3>>
+
 Child: Hey mister, could you help me find my mom? She told me to wait here, but it’s been an hour.
 -> Sure kid, why don't you follow me to the dining room. She might be there getting you food.
+    <<ChangeActorSprite Child Child-Happy>>
     <<jump Choice1A>>
 -> Ignore the kid and walk away
+    <<Move John 2 center 3.5>>
+    <<Fade black 0.0 1.0 3>>
+    <<wait 3.5>>
+    <<Hide John>>
+    <<Hide Child>>
     <<jump Choice1B>>
 -> Shut up, kid. Don’t you know how to not talk to strangers?
+    <<ChangeActorSprite Child Child-Crying>>
     <<jump Choice1C>>
 ===
 
 title: Choice1A
 ---
+Child: Okay sir...
+<<Fade black 0.0 1.0 3>>
+<<wait 4>>
+<<Hide John>>
+<<Hide Child>>
+<<Act John John-Neutral 0.25 center green>>
+<<Act Mother Mother-Neutral 1.25 center>>
+<<Act Child Child-Neutral 0.5 center blue>>
+<<Flip Child>>
+<<Flip John>>
+<<Scene bg_diningroom>>
+<<Fade black 1.0 0.0 3>>
+<<wait 3>>
 Child: Mooom! Why’d you leave me? I was waiting outside our room for you.
+<<Move Child 1.5 center 2>>
+<<wait 2>>
+<<Flip Child>>
 Mother: Oh, I’m so sorry, sweetie. I told you to wait in the room. I was going to come with food.
 Child: I know, but I kept hearing the bald man screaming outside my room. He keeps telling me that I should have gone for the head.
+<<ChangeActorSprite John John-Nervous>>
 John: What did you just say?
 Child: Mom, who is this guy?
-Mother: Oh, I was just talking to this nice gentleman. He was telling me this ship has been around for 102 years and how, on the first voyage, nearly all the passengers and crew died from a serial killer. They called him the Tide Reaper. Very cool, honey.
+<<ChangeActorSprite John John-Neutral>>
+Mother: Oh, I was just talking to this nice gentleman. He was telling me this ship has been around for 102 years and how, on the first voyage, nearly all the passengers and crew died from a serial killer. They called him the Tide Reaper. 
+<<Act Theorist Theorist-Neutral 1.75 center>>
+<<Move Theorist 0.75 center 2.5>>
+
+<<wait 3>>
+<<Flip Theorist>>
+<<wait 1>>
+<<Flip Theorist>>
+<<wait 2>>
+
 Theorist: No, no, no. He wasn’t a serial killer. He was fate. He was judgment. He was executioner. No mere man could do the things he’s done. No, he’s what we shove deep down into our memories. The memories we chose to forget. And he’s right behind you…
+<<ChangeActorSprite John John-Nervous>>
 John: What?
-// Enter angelica
+Mother: Anyways we ought to get going. Nice chatting with you all. 
+<<Flip Mother>>
+<<Flip Child>>
+<<Move Mother 2 center 3.5>>
+<<Move Child 2.25 center 3.5>>
+<<Hide Mother>>
+<<Hide Child>>
+<<wait 4>>
+<<Act Angelica Angelica-Neutral 2 center>>
+<<Move Angelica 1.25 center 2.5>>
+<<wait 2>>
 Angelica: Hey, honey. Where have you been? I saved you some food, but it probably got stale by now.
 Theorist: You’re not safe here. This thing, this being, he’s coming for you and your Angelica. And once he gets you, we are all dead.
+<<ChangeActorSprite John John-Angry>>
 John: Who is coming for us? How do you know this man? I don’t take threats so lightly, so you better be careful who you are threatening.
 Angelica: Don’t listen to him, John. I think I saw him take a hit of ketamine in the bathroom. Just leave this man alone.
+<<Move John 1 center 2.5>>
+<<wait 1>>
+<<Move Theorist 0.25 center 2.5>>
+<<wait 2.5>>
+<<Flip John>>
+<<Flip Theorist>>
 Theorist: John, don’t make the same mistake they did. Don’t forget your pain.
+<<Flip Theorist>>
+<<Move Theorist -1 center 3.5>>
+<<wait 1>>
+<<Flip John >>
+<<Flip Angelica>>
+<<Move John 2 center 3.5>>
+<<Move Angelica 2.25 center 3.5>>
 <<jump EndChapter>>
 ===
 
 title: Choice1B
 ---
+<<Act Theorist Theorist-Neutral 1.25 center>>
+<<Flip Theorist>>
+<<Scene bg_diningroom>>
+<<Act John John-Neutral 0 center green>>
+<<Flip John>>
+<<Fade black 1.0 0.0 2.0>>
+<<Move John 0.25 center 1.5>>
+
+<<wait 3>>
+<<Flip Theorist>>
 Theorist: You shouldn’t be here. Not like this. Not now.
+<<ChangeActorSprite John John-Angry>>
 John: Excuse me?
 Theorist: Leave. Take your Angelica and leave this ship. The longer you stay, the more it feeds, and once it’s full…
-John: How do you know about my Angelica? Did you do something to her…
+John: How do you know about Angelica? Did you do something to her??
+<<Act Angelica Angelica-Neutral 2 center>>
+<<Move Angelica 0.75 center 2.5>>
+<<wait 2>>
 Angelica: Hey, honey. Are you okay? This man has been bothering all the guests. Just leave him alone. I think he’s on crack or something.
 Theorist: Please. Don’t allow it to win. Not again. He won’t leave until you remember…
+<<Flip Theorist>>
+<<Move Theorist 2 center 2.5>>
+<<wait 2>>
+<<Flip John>>
+<<Move John -1.25 center 3.5>>
+<<Move Angelica -1 center 3.5>>
+<<wait 4>>
 <<jump EndChapter>>
 ===
 
 title: Choice1C
 ---
 Child: My mom did tell me not to talk to strangers. But she didn’t say I couldn’t talk to a dead man. How long has it been following you?
+<<ChangeActorSprite John John-Nervous>>
 John: What did you just say? 
 Child: Oh, sorry. I can’t talk to strangers.
+<<Flip Child>>
+<<Move Child 2.5 center 2>>
+<<Fade black 0 1.0 2>>
+<<wait 2>>
+<<Move John 0.75 center 2>>
 <<jump TheoristEncounter>>
 ===
 
@@ -91,7 +178,7 @@ title: Choice2
 <<Scene bg_daypool>>
 <<Act John John-Neutral 0 center green>>
 <<Flip John>>
-<<Move John 0.25 center 2.5>>
+<<Move John 0.25 center 1.5>>
 <<Act Angelica Angelica-Neutral 1.25 center pink>>
 <<wait 3>>
 Angelica: Hey, honey. I’m glad you finally made it. You’ve needed this break for a while. Especially after… I’m just glad we’re finally here. Let's just try and enjoy our time here. 
@@ -115,8 +202,8 @@ Angelica: I'm going to go find a table.
 <<Flip Angelica>>
 <<Move Angelica 2 center 1.5>>
 <<wait 1.5>>
-<<Hide Angelica>>
-<<Move John 1.25 center 3>>
+<<Flip Angelica>>
+<<Move John 0.75 center 2.5>>
 <<wait 3>>
 <<jump TheoristEncounter>>
 ===
@@ -130,8 +217,8 @@ Angelica: I'm going to go find a table.
 <<Flip Angelica>>
 <<Move Angelica 2 center 1.5>>
 <<wait 1.5>>
-<<Hide Angelica>>
-<<Move John 1.25 center 3>>
+<<Flip Angelica>>
+<<Move John 0.75 center 2.5>>
 <<wait 3>>
 <<jump TheoristEncounter>>
 ===
@@ -147,8 +234,9 @@ Angelica: I'm going to go find a table. Do whatever you want.
 <<Flip Angelica>>
 <<Move Angelica 2 center 1.5>>
 <<wait 1.5>>
-<<Hide Angelica>>
-<<Move John 1.25 center 3>>
+<<Flip Angelica>>
+<<Move John 0.75 center 2.5>>
+<<ChangeActorSprite Angelica Angelica-Annoyed>>
 <<wait 3>>
 
 <<jump TheoristEncounter>>
@@ -157,9 +245,11 @@ Angelica: I'm going to go find a table. Do whatever you want.
 title: TheoristEncounter
 ---
 Theorist: Why is it that those in pain seem to bring everyone they love down with them?
-<<Act Theorist Theorist-Neutral left center black>>
+<<Act Theorist Theorist-Neutral -1 center black>>
+<<Flip Theorist>>
+<<Move Theorist 0.25 center 2.5>>
 <<Flip John>>
-<<wait  2>>
+<<wait 4>>
 John: You talking to me? 
 Theorist: You will find out soon enough.
 John: Look, man, I am in no mood for another weirdo to harass me.
@@ -167,14 +257,19 @@ Theorist: John, I fear it’s already too late. With the little time you have, l
 John: How do you know my name? Listen, man, I’m in no mood for any side conversations or whatever you think you’re doing. Just leave me alone.
 Theorist: Oh God, it’s worse than I thought. He’s too close to you… John, why did you leave him in the cave?
 John: Why would you...
-<<ChangeActorSprite Angelica Angelica-Annoyed>>
+<<Move Angelica 1.25 center 1.5>>
 Angelica: John, I found a table for us to sit at. Let’s just leave this psycho alone.
+<<Flip John>>
 Theorist: You can leave me, but you can never leave him.
+<<Flip Angelica>>
+<<Move John 2 center 3.5>>
+<<Move Angelica 2.25 center 3.5>>
+<<wait 3>>
 <<jump EndChapter>>
 ===
 
 title: EndChapter
 ---
-<<Fade black 0.0 1.0 2>>
-<<jump stop>>
+<<Fade black 0.0 1.0 3>>
+<<HideAll>>
 ===
