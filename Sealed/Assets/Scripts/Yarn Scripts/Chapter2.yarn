@@ -4,7 +4,7 @@ title: Chapter2
 <<Act Angelica Angelica-Neutral 1.25 center>>
 <<Act John John-Neutral 0.75 center>>
 <<Flip John >>
-<<Fade black 1.0 0.0 3.0>>
+<<Fade black 1.0 0.0 5.0>>
 <<wait 2>>
 <i>You know the breakfast isn't too bad. Anything is better than my time in the cave. Even after the fame and money from my book about my time in the cave, I still never get used to good food. My taste buds have never been the same. Not after what I had to do to survive. I do appreciate my wife trying to distract me and help me relax for once after my book tour, but it never feels like I am really relaxing; the memories never go away unless I keep myself busy. Maybe it's best if my wife and I go… </i>
 -> Go explore more of the ship
@@ -114,6 +114,7 @@ John: No honey, I didn't mean it like that...
 Angelica: No, it's fine. I'll see you later.
     <<Flip Angelica>>
     <<Move Angelica 2 center 2>>
+    <<wait 3>>
 John: Well shit. I mean no point of me staying in here. 
     <<Flip John>>
     <<Move John -0.25 center 2>>
@@ -267,15 +268,16 @@ Angelica: I miss Arthur sometimes, John. He was also a good man.
 John: I know. Writing the book really did help me cope with his loss. Let him live forever through my words and share to the world what a good man he was. Most importantly, we gave him the ending he deserved. 
 Angelica: It was nice of you to allow him to sacrifice himself for you in your book. Definitely more noble than dying of hunger.
 John: That's what my best friend deserved. 
-    <<Act  Theorist Theorist-Neutral 2 center colorHex>>
+    <<Act  Theorist Theorist-Happy 2 center>>
     <<Move Theorist 1.25 center 2.5>>
 Theorist: Hunger? Sacrifice? Come on John, we both know he had a much more exciting ending. 
+    <<ChangeActorSprite Angelica Angelica-Neutral>>
     <<Flip Angelica>>
     <<ChangeActorSprite John John-Angry>>
 John: Didn't we tell you to leave us alone? Back off man. 
     <<ChangeActorSprite Theorist Theorist-Creepy>>
 Theorist: Loyalty over anything, isn't that what you servicemen say? Where was that when it mattered most, John? Where has your honor gone? Did you bury it with the rest of your memories? 
-    <<ChangeActorSprite Theorist Theorist-Creepy>>
+    <<ChangeActorSprite Theorist Theorist-Neutral>>
 Theorist: I digress, it doesn't matter now. It's so close that it can almost...
     <<wait 1>>
     <<ChangeActorSprite John John-Nervous>>
@@ -286,7 +288,7 @@ Theorist: I digress, it doesn't matter now. It's so close that it can almost...
     <<Flip John>>
 John: WHAT WAS THAT?!
 Angelica: You know what? Let's just go back to our room and get ready for bed.
-John: Did no one else-
+John: Did no one else...
 Angelica: C'mon babe, let's get out of here. 
     <<ChangeActorSprite John John-Neutral>>
 John: Okay... Sounds good with me. 
@@ -337,7 +339,7 @@ John: I get that you miss Arthur, but I don't know why you always bring him up w
 Angelica: John, I don't want to get into this right now. Let's just have a good time. 
     <<Act Theorist Theorist-Neutral 2 center >>
     <<Move Theorist 1.25 center 2.5>>
-Theorist: Trouble in paradise? It likes when you fight, makes it easier... Easier to-
+Theorist: Trouble in paradise? It likes when you fight, makes it easier... Easier to...
     <<Flip Angelica>>
 John: Look man, can you just leave us alone. I'm tired of your rants. 
 Theorist: Why won't you listen John? Why don't you do you and your wife a favor and run? Or, maybe, you want it to follow. Do you like when it's close? So close that it can almost... 
@@ -361,21 +363,34 @@ John: Yeah... sounds good to me.
 
 title: CH2Choice2C
 ---
+    <<ChangeActorSprite Angelica Angelica-Angry>>
 Angelica: Those pretty ladies? Really John? That's really pathetic. I'm done with you always complaining when all I do is try to fix this relationship, fix your issue. But, no. You just want to tear it down, tear me down. John, you really have no compassion, can at least act like you're getting better?  
+    <<ChangeActorSprite John John-Angry>>
 John: Getting better? You think taking me on a nice trip would make me forget? Forget everything that's happened? I will never forget and I don't want to. 
+    <<Shake Angelica 0.1>>
 Angelica: Oh, you don't want to forget is that right? You've got to be kidding me. You think it's fun to wake up to you screaming in pain, screaming for it to go away. You really are a selfish person. You don't see how your pain affects those around you. I try to be a better wife to you and understand all of what you do, but you don't even try.
 John: I'm not some broken toy that you need to fix. Any problem I've got, I can fix on my own. I go on your trips and give you everything I have, but you still complain that I give you nothing. How much more do you want from me? 
 John: Do you want me to go on two hikes a week, take you shopping everyday, go to the bar with you every night? Look, I don't want much from you. I just want to spend time together at home, I dont get why you don't want the same.
-Angelica: You know what? Arthur was right, you are a lazy man. Don't want to get up off your ass and do something with your life. Even before the incident, you didn't want anything to do with me. Arthur told me it's just who you are but I don't know if that justifies it. 
+Angelica: You know what? Arthur was right, you are a lazy man. Don't want to get up off your ass and do something with your life. Even before the incident, you didn't want anything to do with me. Arthur told me it's just who you are, but I don't know if that justifies it. 
+    <<Shake John 0.1>>
 John: I don't like anything to do with you? I've given you the world, everything I have and despite what I've gone through, you say I do nothing. And keep Arthur's name out of your damn mouth. Even when he's dead, you like bringing him up like he's a saint. He did not live a perfect life, I would know. So, don't you dare compare me to him.
-Angelica: You're right, you're not him. He was a better man than you. 
+Angelica: You're right, you're not him. He was a better man than you.
+    <<wait 3>>
+    <<ChangeActorSprite John John-Neutral>>
+    <<wait 2>>
+    <<Flip John>>
 John: That's it. I'm going back to the room. You can find your way back. 
+    <<Move John -0.5 center 2.5>>
 Angelica: Yeah, run away like you always do. I try get your mind off things by taking you on this once in a lifetime cruise, and you <i>ruin</i> it. Maybe this trip helped me learn something about you.
-<<jump EndChapter2>>
+    <<Fade black  0.0 1.0 3>>
+    <<wait 3>>
+    <<jump EndChapter2>>
 ===
 
 title: EndChapter2
 ---
+<<Fade black 0.0 1.0 5>>
+<<wait 5>>
 <<HideAll>>
 <<stop>>
 ===

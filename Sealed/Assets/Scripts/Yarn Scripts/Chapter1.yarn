@@ -199,7 +199,7 @@ position: 230,-672
 <<Act Angelica Angelica-Neutral 1.25 center pink>>
 <<wait 3>>
 Angelica: Hey, honey. I’m glad you finally made it. You’ve needed this break for a while. Especially after… I’m just glad we’re finally here. Let's just try and enjoy our time here. 
--> You’re right. I should just enjoy this cruise and not think too much. I have been having a great time with you here, sweetie.
+-> You’re right. I should just enjoy th is cruise and not think too much. I have been having a great time with you here, sweetie.
     <<ChangeActorSprite Angelica Angelica-Happy>>
     <<jump Choice2A>>
 -> Yeah, okay.
@@ -297,4 +297,5 @@ title: EndChapter
 position: -318,146
 ---
 <<HideAll>>
+<<stop>>
 ===

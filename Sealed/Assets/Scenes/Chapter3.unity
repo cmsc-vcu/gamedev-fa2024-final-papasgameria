@@ -364,6 +364,22 @@ PrefabInstance:
       propertyPath: optionViewPrefab
       value: 
       objectReference: {fileID: 5665317717604146022, guid: 424394918af619a4da4047763c3dea11, type: 3}
+    - target: {fileID: 3292657645953925573, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
+      propertyPath: m_Color.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 3292657645953925573, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3292657645953925573, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3292657645953925573, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3292657647476544605, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -447,6 +463,10 @@ PrefabInstance:
     - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
       propertyPath: onNodeStart.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778558434911714087, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
+      propertyPath: m_Color.a
+      value: 0.39215687
       objectReference: {fileID: 0}
     - target: {fileID: 7778558434935992803, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
       propertyPath: m_AnchorMax.x
@@ -983,6 +1003,30 @@ MonoBehaviour:
   loadSprites:
   - {fileID: 21300000, guid: f994e030a166ad143a981e1e3c95e23e, type: 3}
   - {fileID: 21300000, guid: 277ef0cf74c227a4589718fe1c904e3a, type: 3}
+  - {fileID: 21300000, guid: 1303c4e2d42afc34fb4f8b85b4f3bd1c, type: 3}
+  - {fileID: 21300000, guid: bbcb08cffbaae8d42bf07cd46ebb9788, type: 3}
+  - {fileID: 2673572004019048665, guid: f1d93d6ffcc23a441806339d15e2b7c9, type: 3}
+  - {fileID: 21300000, guid: 0b104f535f7fcac4abf2774962e326cb, type: 3}
+  - {fileID: 21300000, guid: 09c9e3b20155edf41af49d3fdfbd60a0, type: 3}
+  - {fileID: 21300000, guid: b32ef20030ccf5149bc701beff8d4119, type: 3}
+  - {fileID: 21300000, guid: c77b5cb4d132aa24c83a304e761b6070, type: 3}
+  - {fileID: 21300000, guid: 8c774a20b3f59334fa740d5523d144d7, type: 3}
+  - {fileID: 21300000, guid: b19d89be4cf74b7499cf647ab2719648, type: 3}
+  - {fileID: 21300000, guid: cfb5dfd85761f7e448856ebdcd395f9c, type: 3}
+  - {fileID: 21300000, guid: 8e40c815387c8824b9804eba23f9b411, type: 3}
+  - {fileID: 21300000, guid: 7469890ba1743eb40a04cc76e9f4b4b7, type: 3}
+  - {fileID: 21300000, guid: 277ef0cf74c227a4589718fe1c904e3a, type: 3}
+  - {fileID: 21300000, guid: 07a31d85ba6b7bd4f91c32d15ab69717, type: 3}
+  - {fileID: 21300000, guid: a84e66be3ab33d44e99713d81737fd75, type: 3}
+  - {fileID: 21300000, guid: 3380e85c006ab904ebb71e2f10e12ffa, type: 3}
+  - {fileID: 21300000, guid: 4c96609c6bd7ba24991ee43f49d315de, type: 3}
+  - {fileID: 21300000, guid: cecba58e533495b44b6b54caa74976ff, type: 3}
+  - {fileID: 7703333212991521033, guid: 8928981bd3dfaea48a10d1c06c931130, type: 3}
+  - {fileID: 21300000, guid: 37070a18f53647a4c8808ee7c1e6c0c4, type: 3}
+  - {fileID: 21300000, guid: 71c579bb46bec36489a48c39c829b0aa, type: 3}
+  - {fileID: 21300000, guid: 4876b0fa7e7f70246a3de195f34baab5, type: 3}
+  - {fileID: 21300000, guid: 98304e3793c1a844bb81f303a39fbe9f, type: 3}
+  - {fileID: 21300000, guid: 5de3832cbce64bf4187cc9b5a8e73b49, type: 3}
   loadAudio: []
   useResourcesFolders: 0
   defaultTint: {r: 0, g: 0, b: 0, a: 0}

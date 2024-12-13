@@ -335,6 +335,7 @@ GameObject:
   m_Component:
   - component: {fileID: 374328101}
   - component: {fileID: 374328100}
+  - component: {fileID: 374328102}
   m_Layer: 0
   m_Name: VNManager
   m_TagString: Untagged
@@ -366,9 +367,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 0b104f535f7fcac4abf2774962e326cb, type: 3}
   - {fileID: 21300000, guid: b32ef20030ccf5149bc701beff8d4119, type: 3}
   - {fileID: 21300000, guid: 09c9e3b20155edf41af49d3fdfbd60a0, type: 3}
-  - {fileID: 21300000, guid: cecba58e533495b44b6b54caa74976ff, type: 3}
-  - {fileID: 21300000, guid: 37070a18f53647a4c8808ee7c1e6c0c4, type: 3}
+  - {fileID: 21300000, guid: 4c96609c6bd7ba24991ee43f49d315de, type: 3}
+  - {fileID: 21300000, guid: 5de3832cbce64bf4187cc9b5a8e73b49, type: 3}
+  - {fileID: 21300000, guid: d0709b4154c579640bd179a3bea67ece, type: 3}
   - {fileID: 21300000, guid: 71c579bb46bec36489a48c39c829b0aa, type: 3}
+  - {fileID: 21300000, guid: 37070a18f53647a4c8808ee7c1e6c0c4, type: 3}
+  - {fileID: 21300000, guid: cecba58e533495b44b6b54caa74976ff, type: 3}
   loadAudio: []
   useResourcesFolders: 0
   defaultTint: {r: 0, g: 0, b: 0, a: 0}
@@ -394,6 +398,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &374328102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374328099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32fda35eaee64c74eb1562f6f50f0438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1314555485
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,6 +904,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
       propertyPath: onNodeStart.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
@@ -913,6 +933,30 @@ PrefabInstance:
     - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
       propertyPath: onNodeStart.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 374328102}
+    - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadNextScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelLoader, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7778558434911714087, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
       propertyPath: m_Color.a
